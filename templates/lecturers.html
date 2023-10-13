@@ -1,0 +1,33 @@
+{% extends "dashlayout.html" %}
+
+{% block body %}
+
+
+<h4>All Lecturers</h4>
+<h6 class="text-muted">{{department.name}}</h6>
+
+<br>
+<div class="row">
+
+    {% for lecturer in lecturers %}
+    <div class="col-md-4">
+        <a href='{{url_for("lecturer", id=lecturer.id)}}' style="text-decoration: none; color: black;">
+
+        <div class="dashboard-item" style="background-color: white;">
+            <div style="display: flex;">
+                <!-- <h6 style="font-weight: bold; color: black;">{{lecturer.id}}. </h6> -->
+                <h6 style="font-weight: bold; color: black;">{{lecturer.name}}</h6>
+                
+            </div>
+            <h6 class="dashboard-item-text">{{lecturer.department}}</h6>
+            <h6 class="text-muted">{{lecturer.school}}</h6>
+            <!-- <h6 class="text-muted">{{lecturer.email}}</h6>
+            <h6 class="text-muted">{{lecturer.classSize}}</h6> -->
+        </div>
+        </a>
+    </div>
+
+    {% endfor %}
+    </div>
+
+{% endblock %}

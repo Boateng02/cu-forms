@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<style>
+  .search-container {
+    text-align: center;
+    padding: 50px;
+  }
+
+  .card {
+    margin: 20px;
+  }
+  .dashboard-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff;
+  margin: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+}
+.dashboard-item h5{
+  margin-top: 0;
+  color: #000;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif; 
+}
+.dashboard-item p{
+  margin: 2px;
+  color: #000;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif; 
+}
+</style>
+<hr style="width: 90%;">
+<div class="container">
+    <!-- <h3 class="text-center mt-4">Kindly Search for a Lecturer</h3> -->
+    
+    <div class="search-container">
+      <form class="d-flex" method="post" role="search" >
+        <input class="form-control " type="search" name='searched' placeholder="Kindly Search for a lecturer" aria-label="Search" style="width: 60vw; padding: 12px;">
+        <button class="btn" style=" background: #992621; color: #fff; font-weight: 800; font-size: 18px; margin-left: 10px;" type="submit" >Search</button>
+      </form>
+    </div>
+    
+    <div class="row" style="justify-content: space-between;">
+        <div class="col-md-4">
+          <a href="/newdep" style="text-decoration: none; color: #000;">
+            <div class="dashboard-item" data-aos="fade-up">
+              <h5><b>Lecturer Name</b></h5>
+              <p>Full Time</p>
+              <p>Information Technology</p>
+              <p>Part Time</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+        <a href="/newdep" style="text-decoration: none; color: #000;">
+          <div class="dashboard-item" data-aos="fade-up">
+              <h5><b>Lecturer Name</b></h5>
+              <p>Full Time</p>
+              <p>Information Technology</p>
+              <p>Part Time</p>
+          </div>
+        </a>
+        </div>
+        <div class="col-md-4">
+        <a href="/newdep" style="text-decoration: none; color: #000;">
+          <div class="dashboard-item" data-aos="fade-up">
+              <h5><b>Lecturer Name</b></h5>
+              <p>Full Time</p>
+              <p>Information Technology</p>
+              <p>Part Time</p>
+          </div>
+        </a>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+  {% endblock %}
+

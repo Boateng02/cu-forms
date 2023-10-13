@@ -1,0 +1,170 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<style>
+
+.defaultCard{
+   
+   box-shadow: 0 2px 8px 0 rgba(13, 10, 44, 0.06), 0 60px 80px 0 rgba(74, 58, 255, 0.02), 0 40px 50px 0 rgba(74, 58, 255, 0.05);
+   cursor: pointer;
+   padding: 30px;
+   width: 100%;
+   transition: width 1s;
+   margin-bottom: 3vh;
+}
+.inputCard{
+    /* box-shadow: 0 2px 8px 0 rgba(48, 44, 255, 0.1); */
+    border-radius: 10px;    
+    border: none;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 8px 0 rgba(13, 10, 44, 0.06), 0 60px 80px 0 rgba(74, 58, 255, 0.02), 0 40px 50px 0 rgba(74, 58, 255, 0.05);
+}
+.inputTextHolder{
+    width: 100%;
+    margin-top: 5vh;
+    /* box-shadow: 0 2px 8px 0 rgba(13, 10, 44, 0.06), 0 60px 80px 0 rgba(74, 58, 255, 0.02), 0 40px 50px 0 rgba(74, 58, 255, 0.05); */
+}
+
+.inputTextCard{
+    /* box-shadow: 0 2px 8px 0 rgba(48, 44, 255, 0.1); */
+    border-radius: 10px;    
+    border: none;
+    padding: 20px;
+    width: 100%;
+    /* margin-bottom: 5vh; */
+    margin-top: 0;
+    box-shadow: 0 2px 8px 0 rgba(13, 10, 44, 0.06), 0 60px 80px 0 rgba(74, 58, 255, 0.02), 0 40px 50px 0 rgba(74, 58, 255, 0.05);
+}
+</style>
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="container">
+            {% for message in messages %}
+                <div class="alert alert-success">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+  {% endwith %}
+
+<div class="container">
+    <div class="row" style="justify-content: space-around; margin-top: 4vh;">
+        <div class="col-md-6">
+            <div class="defaultCard">
+                    <img src="../static/img/cussco.jpeg" width="100" style="display: flex; justify-content: center; align-items: center; text-align: center; margin: 0 auto;" class="center" alt="">
+                    <h6 class="heading" style="text-align: center; margin-top: 1vh;"><b>CENTRAL UNIVERSITY STAFF COOPERATIVE CREDIT UNION (CUSCCU)</b></h6>
+                    <h2 class="heading" style="text-align: center; margin-top: 1vh;"><b>Request Statement</b></h2>
+                    <h6 style="text-align: center; width: 100%; ">
+                        <b>Kindly fill in the form below.</b>
+                    </h6>
+                    
+                    <form action="" method="POST">
+                        {{form.hidden_tag()}}
+
+                        <!-- <div class="form-floating mb-3">
+                            {{form.name.label}}
+                            {{form.name (class="inputCard", placeholder="Full Name")}}
+                        </div> -->
+
+                        <div class="mb-3">
+                            {{form.name.label}}
+                            <input type="text" name="name" class="inputCard" placeholder="Please enter your full name"  id="autocomplete-input">
+                            <ul id="autocomplete-results"></ul>
+                        </div>
+
+                        <div class="mb-3">
+                            {{form.staffid.label}}
+                            {{form.staffid (class="inputCard", placeholder="Staff ID")}}
+                        </div>
+                        <div class="mb-3">
+                            {{form.phone.label}}
+                            {{form.phone (class="inputCard", placeholder="Phone Number")}}
+                        </div>
+                        <div class="mb-3">
+                            {{form.email.label}}
+                            {{form.email (class="inputCard", type="email", placeholder="Email Address")}}
+                        </div>
+                        
+
+                        <!-- <div style="margin-top: 4vh;" onclick="showLoadingScreen()" >
+                            <button class="pill-button" type="submit" style="margin-top: 4vh;">Submit</button>
+                        </div> -->
+                        <div onclick="showLoadingScreen()">
+                            {{form.submit (style="margin-top: 4vh",  onclick="showLoadingScreen()", class="pill-button")}}
+                        </div>
+                    </form>
+
+            </div>
+            <h6 style="text-align: center; margin-top: 2vh; text-decoration: none;">
+              <!-- Already Signed In? <a href="/" style="text-align: center; text-decoration: none; color: #992621;"><b>Login</b></a> -->
+           </h6>
+        </div>
+        </div>
+    </div>
+
+    <script>
+    var suggestions = [ ];
+
+    fetch('/stafflist').then(function(response) {
+            response.json().then(function(data) {
+                console.log("-----------data-------------")
+                console.log(data)
+                suggestions = data.data
+            })
+        });
+
+        console.log("suggestions")
+        console.log(suggestions)
+
+        const input = document.getElementById('autocomplete-input');
+        const resultsList = document.getElementById('autocomplete-results');
+
+        input.addEventListener('input', debounce(handleInput, 300));
+
+        function handleInput() {
+            const query = input.value.trim().toLowerCase();
+
+            const filteredSuggestions = suggestions.filter(item =>
+                item.toLowerCase().includes(query)
+            );
+
+            displayResults(filteredSuggestions);
+        }
+
+        function displayResults(filteredSuggestions) {
+            clearResults();
+
+            if (filteredSuggestions.length === 0) {
+                return;
+            }
+
+
+            filteredSuggestions.forEach(item => {
+                const li = document.createElement('div');
+                li.textContent = item;
+                li.style.padding = '10px'
+                li.style.borderBottom = '1px solid ash'
+                li.addEventListener('click', () => {
+                    input.value = item;
+                    clearResults();
+                });
+                resultsList.appendChild(li);
+            });
+        }
+
+        function clearResults() {
+            resultsList.innerHTML = '';
+        }
+
+        function debounce(func, wait) {
+            let timeout;
+            return function () {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(this, arguments), wait);
+            };
+        }
+    </script>
+{% endblock %}

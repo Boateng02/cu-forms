@@ -1,0 +1,46 @@
+{% extends "dashlayout.html" %}
+
+{% block body %}
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+
+    <div>
+        <h4>All Course Allocations</h4>
+        <h6 class="text-muted">Testing</h6>
+    </div>
+
+    <a href="{{url_for('addallocation')}}">
+        <button class="pill-button" style="width: fit-content;">Add Course Allocation</button>
+    </a>
+</div>
+
+<br>
+<div class="row">
+
+    {% for response in allocations %}
+    <div class="col-md-4">  
+        <a href="{{url_for('addallocation', courseId=response.id)}}" style="text-decoration: none; color: black;">
+
+        <div data-aos="fade-up" class="dashboard-item" style="background-color: white;">
+            <div style="display: flex;">
+                <h6 style="font-weight: bold; color: black;">{{response.courseTitle}}</h6>
+            </div>
+            <h6 class="text-muted">{{response.courseCode}}</h6>
+            <h6 class="text-muted">Level {{response.level}} - {{response.noOfStudents}} students</h6>
+            <h6 class="text-muted">{{response.lecturer}}</h6>
+            <h6 class="text-muted">{{response.departments}}</h6>
+            {% if lectureId %}
+            <a class="dashboard-item-text" href="{{url_for('lecturer', id=lecturerId)}}">
+                <h6>{{lectureId}}</h6>
+            </a>
+            {% else %}
+            <h6 class="dashboard-item-text"> {{response.school}}</h6>
+            {% endif %}
+        </div>
+        </a>
+    </div>
+
+    {% endfor %}
+    </div>
+
+{% endblock %}

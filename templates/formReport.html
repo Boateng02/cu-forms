@@ -1,0 +1,10 @@
+{% extends "dashlayout.html" %}
+
+{% block body %}
+
+    {% for q in questions %}
+        <h4>{{q.question}}</h4>
+        <h4>{{q.results}}</h4>
+    {% endfor %}
+
+{% endblock %}

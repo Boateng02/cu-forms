@@ -1,0 +1,409 @@
+No.,Level,CourseCode,CourseTitle,CreditHrs,Stream,Campus,Lecturer,LecturerTitle,LecturerStatus,NoOfStudents,Department
+1,200,ITEC 411,Mobile Apps Development,3,M,Miotso,James Anani Amezi,Mr.,Adjunct,38,Computer Scienc/Info. Tech.
+2,100,CENG 183,Basic Mechanics,2,M,Miotso,Josiah Malcolm,Dr.,Adjunct,20,Civil Engineering
+3,400,CBMG 401,Entrepreneurship,3,M,Miotso, Philip Asibu Yartey,Mr.,Full-Time,150,
+4,400,CBMG 401,Entrepreneurship,3,W,Miotso, Philip Asibu Yartey,Mr.,Full-Time,23,
+5,200,CBFW203,Business Law,3,M,C.T,"Lawyer Fred Asamoah
+
+Lawyer Fred Asamoah",,Full-Time,7,
+6,200,CBFW203,Business Law,3,E,C.T,Lawyer Fred Asamoah,,Full-Time,10,
+7,200,   CBFW203,            Business Law,3,              w,     C.T, Lawyer Fred Asamoah,,    Full-Time,10,
+8,100,   CBFW107,Found. Of Management,3,             M,C.T,Kofi Frimpong,Mr., Full-Time,,
+9,100,  CBFW107,Found. Of Management,3,             E,C.T,Kofi Frimpong,Mr.,Full-Time,,
+10,100,CBFW107,Found. Of Management,3,             W,C.T,Kofi Frimpong,Mr.,Full-Time,,
+11,300,CBMG301,Proc.& log. Mgt,3,M,C.T,Kofi Frimpong,Mr.,Full-Time,3,
+12,300,CBMG301,Proc.& log. Mgt,3,E,C.T,Kofi Frimpong,Mr.,Full-Time,3,
+13,300,CBMG301,Proc.& log. Mgt,3,W,C.T,Kofi Frimpong,Mr.,Full-Time,5,
+14,400,CBMG406,Org.& Admin Theory,3,M,Miotso,Kems Ohene Gyan,Mr.,Full-Time,20,
+15,400,CBMG406,Org.& Admin Theory,3,W,Miotso,Kems Ohene Gyan,Mr.,Full-Time,3,
+16,400,CBMG 403,Public Administration,3,M,Miotso,Kems Ohene Gyan,Mr.,Full-Time,20,
+17,400,CBMG 403,Public Administration,3,W,Miotso,Kems Ohene Gyan,Mr.,Full-Time,3,
+18,300,CBMG 303,International Business,3,M,Miotso,Isaac Asare,Dr.,Full-Time,70,
+19,300,CBMG 303,International Business,3,E,Miotso,Isaac Asare,Dr.,Full-Time,25,
+20,300,CBMG 303,International Business,3,W,Miotso,Isaac Asare,Dr.,Full-Time,11,
+21,400,CBMG 407,Org.& Admin Theory,3,M,C.T,Nick Fobih,Dr.,Full-Time,5,
+22,400,CBMG407,Org.& Admin Theory,3,E,C.T,Nick Fobih,Dr.,Full-Time,3,
+23,400,CBMG 407,Org.& Admin Theory,3,W,C.T,Nick Fobih,Dr.,Full-Time,15,
+24,300,CBFW 301,Strategic Management,3,M,C.T,Ben Otchere-Ank.,Dr.,Full-Time,18,
+25,300,CBFW 301,Strategic Management,3,E,C.T,Ben Otchere-Ank.,Dr.,Full-Time,9,
+26,300,CBFW 301,Strategic Management,3,W,C.T,Ben Otchere-Ank.,Dr.,Full-Time,20,
+27,400,CBMG 405,Corporate Governance,3,M,C.T,Ben Otchere-Ank.,Dr.,Full-Time,10,
+28,400,CBMG 405,Corporate Governance,3,E,C.T,Ben Otchere-Ank.,Dr.,Full-Time,5,
+29,400,CBMG 405,Corporate Governance,3,W,C.T,Ben Otchere-Ank.,Dr.,Full-Time,30,
+30,100,CBFW107,Found. Of Management,3,M,Miotso,Gladys Kumi Som,Mrs,Full-Time,,
+31,100,CBFW107,Found. Of Management,3,W,Miotso,Gladys Kumi Som,Mrs,Full-Time,,
+32,300,CBMG301,Proc.& log. Mgt,3,M,Miotso,Gladys Kumi Som,Mrs,Full-Time,19,
+33,300,CBMG301,Proc.& log. Mgt,3,W,Miotso,Gladys Kumi Som,Mrs,Full-Time,12,
+34,300,CBMG 303,International Business,3,M,C.T,Nick Fobih,Dr.,Full-Time,6,
+35,300,CBMG 303,International Business,3,W,C.T,Nick Fobih,Dr.,Full-Time,17,
+36,600,GBGM 601,Proj.& Optn Mgt(MBA),3,E,C.T,Freeman Osei – Tete,Dr.,Adjunct,6,
+37,600,GBGM 601,Proj.& Optn Mgt(MBA),3,W,C.T,Freeman Osei – Tete,Dr.,Adjunct,16,
+38,600,GBGM 601,Proj.& Optn Mgt(MBA),3,W,Miotso,Freeman Osei – Tete,Dr.,Adjunct,9,
+39,400,CBMG 405,Corporate Governance,3,M,Miotso,Ruby Agbola,,Full-Time,72,
+40,400,CBMG 405,Corporate Governance,3,W,Miotso,Ruby Agbola,,Full-Time,12,
+41,300,CBFW 301,Strategic Management,3,M,Miotso,Ruby Agbola,,Full-Time,80,
+42,300,CBFW 301,Strategic Management,3,A,Miotso,Ruby Agbola,,Full-Time,49,
+43,300,CBFW 301,Strategic Management,3,W,Miotso,Ruby Agbola,,Full-Time,30,
+44,500,GBGM 605,Managing Information,3,E,C.T,Mark Boadu,Dr.,Adjunct,,
+45,500,GBGM 605,Managing Information,3,W,C.T,Mark Boadu,Dr.,Adjunct,,
+46,500,GBGM 605,Managing Information,3,W,Miotso,Mark Boadu,Dr.,Adjunct,,
+47,500,EMLG 503,Eth.in Lead. Gov& Dev,3,w,C.T,Mark Boadu,Dr.,Adjunct,,
+48,600,GBGM 603,International Business,3,E,C.T,Adelaide Kastner,Dr.,Full-Time,6,
+49,600,GBGM 603,International Business,3,W,C.T,Adelaide Kastner,Dr.,Full-Time,16,
+50,600,GBGM 603,International Business,3,W,Miotso,Adelaide Kastner,Dr.,Full-Time,9,
+51,400,CBMG 401,Entrepreneurship,3,M,C.T, Alex Abada,Mr,Full-Time,16,
+52,400,CBMG 401,Entrepreneurship,3,E,C.T,        Alex Abada,Mr.,Full-Time,7,
+53,400,CBMG 401,Entrepreneurship,3,W,C.T,Alex Abada,Mr.,Full-Time,49,
+54,400,CBMG 403,Public Administration,3,M,C.T,Alex Abada,Mr,Full-Time,6,
+55,400,CBMG 403,Public Administration,3,E,C.T,Alex Abada,Mr,Full-Time,4,
+56,400,CBMG 403,Public Administration,3,W,C.T,Alex Abada,Mr,Full-Time,16,
+57,200,        CBFW 203,Business Law,3,M,Miotso,Lawyer Opare-Wiredu,,Adjunct,100,
+58,200,CBFW 203,Business Law,3,W,Miotso,Lawyer Opare-Wiredu,,Adjunct,25,
+59,500,GBGM 605,Managing Information,3,w,Kumasi,Raphael Asamoah,Dr.,Adjunct,,
+60,600,GBGM 601,Proj.& Optn Mgt(MBA),3,w,Kumasi,Richard Boso,Dr.,Adjunct,,
+61,600,GBGM 603,International Business,3,w,Kumasi,Cammilus Wongnaa,Dr.,Adjunct,,
+,,CENG 183,Basic Mechanics I,2,,,Josiah Malcom ,Dr.,Adjunct,,
+,,CENG453,Alfred Gand,3,,, Alfred Gand,Dr.,Adjunct,,
+,,CENG 161,Technical Drawing,2,,,Eric Adjei ,Dr.,Adjunct,,
+,,CENG 361,Traffic Engineering,2,,,Eric Adjei ,Dr.,Adjunct,,
+,,CENG 495,Int. Infrastruct. Design,4,,,Eric Adjei ,Dr.,Adjunct,,
+,,CENG 155,Basic Structures,3,,,Lawrence Abladey  ,Mr,Adjunct,,
+,,CENG 163,Engineering Technology,2,,,Lawrence Abladey  ,Mr,Adjunct,,
+,,CENG 255,Theory of Structures,3,,,Lawrence Abladey  ,Mr,Adjunct,,
+,,CENG357,Reinforced Concrete Design,3,,,Euclid Nikoi Kotey  ,Ing.,Adjunct,,
+,,CENG373,Hydraulic Engineering,3,,,Edward Kofi Ackom ,Ing.,Adjunct,,
+,,CENG493,Construction Management,3,,,Edward Kofi Ackom ,Ing.,Adjunct,,
+,,CENG467,Geotechnical Engineering,3,,,Joseph Oddei            ,Ing.,Adjunct,,
+,,         CENG469,Foundation Engineering II,2,,,Joseph Oddei            ,Ing.,Adjunct,,
+,,CENG 251,Differential Equations,3,,,J. Oduro-Yeboah ,Rev.,Adjunct,,
+,,CENG 353,Statistical Methods,2,,,J. Oduro-Yeboah ,Rev.,Adjunct,,
+,,CENG 151,Introductory Algebra,2,,,Abraham Bamfo Boakye ,Mr,,,
+,,CENG 351,Numerical Methods,2,,,Abraham Bamfo Boakye ,Mr,,,
+,,CENG291,Principles of Surveying,3,,,No Lecturer,,,,
+,,COMP407,Entrepreneurship for comp,3,,,Gustave Amuzu,Rev.,Adjunct,,
+,,      ITEC403,Mobile & Distributed ,3,,,Gustave Amuzu,Rev.,Adjunct,,
+,,ITEC201,Systems Analysis and Design,3,,,Lorraine Johnson,Mrs,Adjunct,,
+,,ITEC411,Mobile Application System,3,,,James Anani ,Mr,Adjunct,,
+,,CENG152,Univariate Calculus,3,,,Abraham Bamfo Boakye,Mr,Adjunct,,
+,,CENG154,Civil Engineering Materials,3,,,Lawrence Abladey,Mr,Adjunct,,
+,,CENG162,Civil Engineering Drawing,3,,,Lawrence Abladey,Mr,Adjunct,,
+,,CENG258,Structural Analysis,3,,,Lawrence Abladey,Mr,Adjunct,,
+,,CENG268,Computer Aided Design,3,,,Lawrence Abladey,Mr,Adjunct,,
+,,CENG356,Steel Structures Design,2,,,Alfred Gand,Dr.,Adjunct,,
+,, CENG358,Timber Structures Design,2,,,Alfred Gand,Dr.,Adjunct,,
+,,CENG452,Structural Engineering,3,,,Alfred Gand,Dr.,Adjunct,,
+,,CENG394,Principles of Integrated Design,3,,,Eric Adjei ,Dr.,Adjunct,,
+,,CENG362,Road Engineering,2,,,Eric Adjei ,Dr.,Adjunct,,
+,,CENG264,Soil and Rock Mechanics,3,,,Eric Adjei ,Dr.,Adjunct,,
+,,CENG462,Pavement Engineering,3,,,Eric Adjei ,Dr.,Adjunct,,
+,,CENG364,Foundation Engineering,2,,,Joseph Odei ,Dr.,Adjunct,,
+,,CENG498,Foundations of Professional ,2,,,Joseph Odei ,Dr.,Adjunct,,
+,,CENG252,Multivariate Calculus,3,,,J. Oduro Yeboah,Rev.,Adjunct,,
+,,CENG172,Fluid Mechanics Fundamentals,3,,,Edward Kofi Ackon ,Ing.,Adjunct,,
+,,CENG272,Fluid Mechanics,3,,,Edward Kofi Ackon ,Ing.,Adjunct,,
+,,CENG292,Engineering Surveying,3,,,No Lecturer,,,,
+,,CENG398,Estimating and Scheduling,3,,,No Lecturer,,,,
+,,COMP403,Data Communication ,3,,,Gustave Amuzu,Rev.,Adjunct,,
+,,COMP412,Expert Systems,3,,,Gustave Amuzu,Rev.,Adjunct,,
+,,COMP411,E-Commerce,3,,,Gustave Amuzu,Rev.,Adjunct,,
+,,ITEC312,Knowledge & Information ,3,,,Lorraine Johnson ,Mrs,Adjunct,,
+,,COMP204,Programming in Visual,3,,,James Anani ,Mr.,Adjunct,,
+,200,TMGC 201 ,Prin. of Teach. and Learning,3,,,Kwasi Sampong,Rev.,Full-Time,,
+,200,TMGC 209 ,Research Methods,3,,,Kwasi Sampong,Rev.,Full-Time,,
+,500,MARS 809,Creative Communication ,3,,,Kwasi Sampong,Rev.,Full-Time,,
+,600,MPTH 801 ,Research Methodology,4,,,Kwasi Sampong,Rev.,Full-Time,,
+,100,TMTH 102,Traditional African Life ,3,,,Doris E. Yalley,Dr.,Adjunct,,
+,200,TMTH 204,Early Church to Africa,3,,,Doris E. Yalley,Dr.,Adjunct,,
+,200,TMTH 205,Early Church to AD 461,3,,,Doris E. Yalley,Dr.,Adjunct,,
+,300,TMTH 326,Reformation,3,,,Doris E. Yalley,Dr.,Adjunct,,
+,300,TMTH 307,West Africa Church ,3,,,Doris E. Yalley,Dr.,Adjunct,,
+,400,TMTH 401,Missionary Christianity ,3,,,Doris E. Yalley,Dr.,Adjunct,,
+,500,MARS 803,African Traditional Religion,3,,,Doris E. Yalley,Dr.,Adjunct,,
+,600,MPTH 803,Christianity in Cont. Africa,4,,,Doris E. Yalley,Dr.,Adjunct,,
+,100,TMTH 106,Introduction to the New ,3,,,Charles Amanor ,Rev.,,,
+,300,TMTH 311,Synoptic Gospels,3,,,Charles Amanor ,Rev.,,,
+,300,TMTH 320,I & II Corinthians,3,,,Charles Amanor ,Rev.,,,
+,300,TMTH 306,Introduction to Biblical ,3,,,Charles Amanor ,Rev.,,,
+,400,TMTH 402,Theology of the New ,3,,,Charles Amanor ,Rev.,,,
+,400,TMTH 425,Cultural Anthropology,3,,,Charles Amanor ,Rev.,,,
+,500,MARS 807,Introduction to the New,3,,,Charles Amanor ,Rev.,,,
+,100,TMTH 101,Systematic Theology 1,3,,,Andrew Gbandeh-Mitta,Rev.,,,
+,100,TMTH 108,Systematic Theology II,3,,,Andrew Gbandeh-Mitta,Rev.,,,
+,200,TMTH 203,Homiletics 1,3,,,Andrew Gbandeh-Mitta,Rev.,,,
+,200,TMTH 202,Church Planting and Mission,3,,,Andrew Gbandeh-Mitta,Rev.,,,
+,300,TMTH 301, Pastoral Ministry ,3,,,Andrew Gbandeh-Mitta,Rev.,,,
+,300,TMTH 308,Christian Apologetics,3,,,Andrew Gbandeh-Mitta,Rev.,,,
+,300,TMTH 310,Cross Cultural ,3,,,Andrew Gbandeh-Mitta,Rev.,,,
+,400,TMTH 427,Applied Theology of ,3,,,Andrew Gbandeh-Mitta,Rev.,,,
+,200,TMTH 206,Beginners’ New Testament ,3,,,Prince Osei-Sarfo,Rev.,Adjunct,,
+,200,TMTH 207,Beginners’ Biblical Hebrew,3,,,Prince Osei-Sarfo,Rev.,Adjunct,,
+,200,TMTH 204,Old Testament Wisdom ,3,,,Prince Osei-Sarfo,Rev.,Adjunct,,
+,200,TMTH 316,Church Polity,3,,,Prince Osei-Sarfo,Rev.,Adjunct,,
+,300,TMTH 303,World Religions,3,,,Prince Osei-Sarfo,Rev.,Adjunct,,
+,300,TMTH 309,Contemporary Moral & ,3,,,Prince Osei-Sarfo,Rev.,Adjunct,,
+,300,TMTH 322,Intermediate Biblical ,3,,,Prince Osei-Sarfo,Rev.,Adjunct,,
+,400,TMTH 418,Advance Biblical Hebrew,3,,,Prince Osei-Sarfo,Rev.,Adjunct,,
+,100,TMGC103,Introduction to Psychology,3,,,Aaron Adjei,Rev.,Adjunct,,
+,200,TMGC 202,Pastoral Care & Counselling,3,,,Aaron Adjei,Rev.,Adjunct,,
+,500,MARS 808,Pastoral Care & Counselling,3,,,Aaron Adjei,Rev.,Adjunct,,
+,500,MARS813,Sociology of Religion,3,,,Aaron Adjei,Rev.,Adjunct,,
+,600,MARS 812 ,Moral and Ethical Studies,4,,,Aaron Adjei,Rev.,Adjunct,,
+,600,MPTH 804 ,Sociology of Religion,4,,,Aaron Adjei,Rev.,Adjunct,,
+,300,TMTH 305, Intermediate N. T. Greek ,3,,,Charles Owiredu,Rev.,Adjunct,,
+,400,TMTH 420,Advance New Testament GRk,3,,,Charles Owiredu,Rev.,Adjunct,,
+,500,MARS 801 ,Introduction to the OT,3,,,Charles Owiredu,Rev.,Adjunct,,
+,400,TMTH 403,Islamic Studies,3,,,Adjei-Acquah,,Adjunct,,
+,500,MARS 804,Buddhism & Hinduism,3,,,Adjei-Acquah,,Adjunct,,
+,200,TMTH 208,Philosophy of Religion ,3,,,Robert Ago Mensah,Rev.,Adjunct,,
+,300,TMTH 302,Pentecostal & Charismatic St.,3,,,Robert Ago Mensah,Rev.,Adjunct,,
+,500,MARS 802,Philosophy of Religion,3,,,Robert Ago Mensah,Rev.,Adjunct,,
+,600,MPTH 802 ,"African Religion, Philosophy ",4,,,Robert Ago Mensah,Rev.,Adjunct,,
+,500,MARS 805,Contemporary Christian Th.,3,,,Ishmael Isaac Arthur,Rev.,Adjunct,,
+,500,MARS 814 ,Contemporary West African ,3,,,Ishmael Isaac Arthur,Rev.,Adjunct,,
+,100,TMTH 103,Introduction to the Old Test.,3,,,Isaac Boapeah ,Rev.,Full-Time,,
+,100,TMGC 105,Introduction to Phil. & Logic ,3,,,Isaac Boapeah ,Rev.,Full-Time,,
+,100,TMTH 104,Life & Teaching of Jesus ,3,,,Isaac Boapeah ,Rev.,Full-Time,,
+,200,TMBC 208,Life & Thought of Paul ,3,,,Isaac Boapeah,Rev.,Full-Time,,
+,400,TMTH 405,Theology of the Old Test.,3,,,Isaac Boapeah,Rev.,Full-Time,,
+3,700,PGDE 701,"Introduction to the historical & Philosophical
+ Foundations of Education",,,, Fredua Agyeman,Dr.,Full Time,,Education Unit
+4,700,PGDE 703,Introduction to Sociology & Contemporary Issues,,,,Eugene Milledzi,Dr.,Adjunct,,Education Unit
+5,700,PGDE 705,Introduction to Educational  Psychology,,,,Eunice Torto-Seidu,Dr.,Adjunct,,Education Unit
+6,,PGDE 707,Introduction to Comparative Education,,,,Rev. Addo-Sampong,Dr.,Full Time,,Education Unit
+7,,PGDE 709,"Introduction to Information Technology 
+in Education",,,,Denise Duncan,Dr.,Full Time,,Education Unit
+8,,PGDE 702,Introduction to Human Growth and Development,,,,Eunice Torto-Seidu,Dr.,Adjunct,,Education Unit
+9,,PGDE 704,General Principles and Methods of Teaching,,,,Phinihas Acheampong,Dr.,Adjunct,,Education Unit
+10,,PGDE 706,Introduction to Educational Admin & Planning,,,,Fredua Agyeman,Dr.,Full Time,,Education Unit
+11,,PGDE 708,Introduction to Curriculum Planning & Develoment,,,,Ruth Keziah-Annan,Dr.,Adjunct,,Education Unit
+12,,PGDE 714,Entrepreneurship and Innovation Education,,,,Rev. Aaron Adjei,Dr.,Full Time,,Education Unit
+13,,PGDE 711,"Introduction to English Language
+ & Literature Teaching",,,,Rev. Fr. C. Adjoe,Dr.,Full Time,,Education Unit
+14,,PGDE 713,Economics Education,,,,Albert L. Dare,Prof.,Adjunct,,Education Unit
+15,,PGDE 715,Geography and Resource Development Education,,,,,,,,Education Unit
+16,,PGDE 725,Religious and Moral Education,,,,Rev. Aaron Adjei,Dr.,Full Time,,Education Unit
+17,,PGDE 727,Social Studies Education,,,,Phinihas Acheampong,Dr.,Full Time,,Education Unit
+18,,PGDE 749,History Education,,,,,,,,Education Unit
+19,,PGDE 743,French Education,,,,Cornelius Azasu,Dr.,Adjunct,,Education Unit
+20,,PGDE 731,Business/Agri-business Education,,,,,,,,
+21,100,PSYC 101,Introduction to Psychology,3,M,,Worlali Nyaledzigbor,Ms,,,Psychology
+22,300,PSYC 311,Developmental Psychology I,3,M,,Worlali Nyaledzigbor,Ms,,15,Psychology
+23,300,NSNG 305,Psychology,3,M,,Worlali Nyaledzigbor,Ms,,100,Psychology
+24,400,PSYC 419,Industrial Psychology,3,M,,Worlali Nyaledzigbor,Ms,,13,Psychology
+25,300,PSYC 312,Developmental Psychology II,3,M,,Worlali Nyaledzigbor,Ms,,16,Psychology
+26,400,PSYC 412,Organisational Psychology,3,M,,Worlali Nyaledzigbor,Ms,,13,Psychology
+27,100,PSYC 101,Introduction to Psychology,3,M,,Worlali Nyaledzigbor,Ms,,,Psychology
+28,300,NSNG 305.,Psychology ( feb Cohort),3,M,,Worlali Nyaledzigbor,Ms,,,Psychology
+29,300,PSYC 315,Research Methods for Psychologists,3,M,Miotso,Joseph Ocran,Dr.,,16,Psychology
+30,300,PSYC 326,Statistics for Psychologists,3,M,Miotso,Joseph Ocran,Dr.,,16,Psychology
+31,300,PSYC 317,Social Psychology,3,M,Miotso,Adina Addy,Dr.,,,Psychology
+32,100,PSYC 103,Theories of Psychology,3,M,Miotso,Eugenia Yamson,Ms,,,Psychology
+33,200,psyc 207,Learning,3,M,Miotso,Eugenia Yamson,Ms,,11,Psychology
+34,200,PSYC 215,Biological Foundations of Behaviour,3,M,Miotso,Eugenia Yamson,Ms,,11,Psychology
+35,300,PSYC 313,Theories of Personality,3,M,Miotso,Eugenia Yamson,Ms,,15,Psychology
+36,400,PSYC 409,Health Psychology,3,M,Miotso,Eugenia Yamson,Ms,,13,Psychology
+37,200,PSYC 216,Motivation & Emotion,3,M,Miotso,Eugenia Yamson,Ms,,11,Psychology
+38,200,PSYC 304,Psychology of The Exceptional Child,3,M,Miotso,Eugenia Yamson,Ms,,15,Psychology
+39,100,PSYC 103,Theories of Psychology,3,M,Miotso,Eugenia Yamson,Ms,Full Time,,Psychology
+40,100,PSYC 102,"Introduction to Experimental Psychology
+( Feb. Cohort)",3,M,Miotso,Eugenia Yamson,Ms,Full Time,,Psychology
+41,100,PSYC 102.,Introduction to Experimental Psychology,3,M,Miotso,Amma Serwaa Aboagye Kyei,Mrs.,Full Time,,Psychology
+42,200,PSY 212,Cognitive Psychology II,3,M,Miotso,Amma Serwaa Aboagye Kyei,Mrs.,Full Time,11,Psychology
+43,200,PSYC 208,Practicals in Cognition,3,M,Miotso,Amma Serwaa Aboagye Kyei,Mrs.,Full Time,11,Psychology
+44,300,PSYC 314,Abnormal Behaviour,3,M,Miotso,Amma Serwaa Aboagye Kyei,Mrs.,Full Time,15,Psychology
+45,200,PSYC 211,Cognitive Psychology I,3,M,Miotso,Feikoab Parimah,,Full Time,11,Psychology
+46,300,PSYC 321,Psychology of Poverty and Wealth Creation,3,M,Miotso,Feikoab Parimah,,Full Time,16,Psychology
+47,100,PSYC 106,ICT for Psychologists,3,M,Miotso,Feikoab Parimah,,Full Time,16,Psychology
+48,100,PSYC 108,Basic Statistics,3,M,Miotso,Feikoab Parimah,,Full Time,16,Psychology
+50,300,PSYC 308,Psychological Tests and Measurement,3,M,Miotso,Feikoab Parimah,,Full Time,15,Psychology
+,300,PSYC 318,Environmental Psychology,3,M,Miotso,Feikoab Parimah,,Full Time,15,Psychology
+,100,PSYC 106,ICT for Social Sciences,3,M,Miotso,Feikoab Parimah,,Full Time,,Psychology
+,100,PSYC 108,Basic Statistics,3,M,Miotso,Feikoab Parimah,,,,Psychology
+,300,PSYC 323,Psychology of Gender,3,M,Miotso,Noble Osei Bonsu,Mr.,Adjunct,15,Psychology
+,400,PSYC 403,Clinical Psychology,3,M,Miotso,"Derek Oppong, Adjunct",Dr.,Full Time,13,Psychology
+,400,PSYC 411,African Psychology,3,M,Miotso,"Derek Oppong, Adjunct",Dr.,Full Time,13,Psychology
+,400,PSYC 418,Psychology and National Development,3,M,Miotso,"Derek Oppong, Adjunct",Dr.,Full Time,13,Psychology
+,400,PSYC 400(LONG ESSAY),Research Seminar,1,M,Miotso,"Ms Worlali Nyaledzigbor, 
+Mrs Amma Serwaa Aboagye 
+Kyei, Mr Feikoab Parimah",,Full Time,13,Psychology
+,400,PSYC 415,Practicuum/Internship,2,M,Miotso,"Ms Worlali Nyaledzigbor, 
+Mrs Amma Serwaa Aboagye 
+Kyei, Mr Feikoab Parimah",,Full Time,13,Psychology
+,400,PSYC 400,Long Essay Project,5,M,Miotso,"Ms Worlali Nyaledzigbor, 
+Mrs Amma Serwaa Aboagye Kyei, 
+Mr Feikoab Parimah",,Full Time,13,Psychology
+,,NSNG 305..,Psychology ( Weekend),3,W,,Yvette Ussher,Dr.,Adjunct,15,Psychology
+,400,PSYC 406,Community Psychology,3,M,Miotso,Yvette Ussher,Dr.,Adjunct,13,Psychology
+,,,Intermediate Accounting,3,M&W,Miotso,,,,,Accounting
+,,,Cost Accounting,3,M&W,Miotso,,,,,Accounting
+,,,Financial Reporting,3,M&W,Miotso,,,,,Accounting
+,,,Fundamentals of Accounting I,3,M&W,Miotso,,,,,Accounting
+,,,Public Sector Accounting,3,M&W,Miotso,Hadija Nyante,Mrs.,,,Accounting
+,,,Taxation,3,"M, E&W",Christ Temple,Ernest Bruce-Twum,Dr.,Full Time,,Accounting
+,,,Fundamentals of Accounting I,3,"M, E&W",Christ Temple,,,,,Accounting
+,,,Cost Accounting,3,"M, E&W",Christ Temple,Philip Ayagre,,,,Accounting
+,,,Intermediate Accounting,3,"M, E&W",Christ Temple,,,,,Accounting
+,,,Financial Reporting,3,M&E,Christ Temple,John Ackon,,,,Accounting
+,,,Accounting Information System,3,M&W,Miotso,,,,,Accounting
+,,,ACCounting Information System,3,"M, E&W",Christ Temple,,,,,Accounting
+,,,Business Maths ,3,M&W,Miotso,,,,,Accounting
+,,,Business Maths ,3,M&W,Christ Temple,,,,,Accounting
+,,,Public Sector Accounting,3,,Christ Temple,,,,,Accounting
+,200,COMM 205,Introduction to Advertising,3,M,Miotso,Abena Gyampo,Ms,Full Time,35,"Communication & Media 
+Studies"
+,400,COMM 401,Development Communication,3,M,Miotso,Abena Gyampo,Ms,Full Time,53,"Communication & Media 
+Studies"
+,400,COMM 409,Writing for the Screen,3,M,Miotso,Abena Gyampo,Ms,Full Time,,"Communication & Media 
+Studies"
+,400,COMM 413,Social Development & Film Production,4,M,Miotso,Abena Gyampo,Ms,Full Time,53,"Communication & Media 
+Studies"
+,200,COMM 202,Foundations of Journalism,3,M,Miotso,Abena Gyampo,Ms,Full Time,35,"Communication & Media 
+Studies"
+,300,COMM 303,Advanced Broadcasting,3,M,Miotso,Abena Gyampo,Ms,Full Time,45,"Communication & Media 
+Studies"
+,400,COMM 408,Broadcast Workshop,4,M,Miotso,Abena Gyampo,Ms,Full Time,53,"Communication & Media 
+Studies"
+,400,COMM 418,International Communication,3,M,Miotso,Abena Gyampo,Ms,Full Time,53,"Communication & Media 
+Studies"
+,400,COMM 421,Media and Conflict Management,3,M,Miotso,Etornam Komla Buami,Mr.,Full Time,53,"Communication & Media 
+Studies"
+,200,COMM 207,Introduction to Broadcast Journalism ,3,M,Miotso,Etornam Komla Buami,Mr.,,35,"Communication & Media 
+Studies"
+,200,COMM 209,Introduction to Print Journalism,3,M,Miotso,Etornam Komla Buami,Mr.,,35,"Communication & Media 
+Studies"
+,100,COMM 108,History of Mass Media in Africa,3,M,Miotso,Etornam Komla Buami,Mr.,,,"Communication & Media 
+Studies"
+,100,COMM 108.,"History of Mass Media in Africa 
+( Feb. Cohort )",3,M,Miotso,Etornam Komla Buami,Mr.,,,"Communication & Media 
+Studies"
+,100,COMM 104,Introduction to Visual Communication,3,M,Miotso,Etornam Komla Buami,Mr.,,,"Communication & Media 
+Studies"
+,100,COMM 104.,"Introduction to Visual Communication 
+( Feb Cohort )",3,M,Miotso,Etornam Komla Buami,Mr.,,,"Communication & Media 
+Studies"
+,300,COMM 309,"Advanced Advertising
+",3,M,Miotso,"Marian Tsegah
+",Dr.,Full Time,45,"Communication & Media 
+Studies"
+,400,COMM 419,Media Management & Entrepreneurship,3,M,Miotso,"Marian Tsegah
+",Dr.,Full Time,53,"Communication & Media 
+Studies"
+,400,COMM 405,Public Relations Writing ,3,M,Miotso,"Marian Tsegah
+",Dr.,Full Time,53,"Communication & Media 
+Studies"
+,400,COMM 407,Advertising Copy Writing,3,M,Miotso,"Marian Tsegah
+",Dr.,Full Time,53,"Communication & Media 
+Studies"
+,400,COMM 411,Advertising Workshop,4,M,Miotso,"Marian Tsegah
+",Dr.,Full Time,53,"Communication & Media 
+Studies"
+,200,COMM 208,"Media, Culture & Society",3,M,Miotso,"Marian Tsegah
+",Dr.,Full Time,35,"Communication & Media 
+Studies"
+,100,COMM 115,"       Media and Information Literacy 
+",3,M,Miotso,Rosemary Kimani,Dr.,,,"Communication & Media 
+Studies"
+,100,COMM 115.,"Media and Information Literacy 
+( Feb. Cohort)
+",3,M,Miotso,Rosemary Kimani,Dr.,,,"Communication & Media 
+Studies"
+,300,COMM 305,Social Psychology,3,M,Miotso,Rosemary Kimani,Dr.,,45,"Communication & Media 
+Studies"
+,400,COMM 415,Media and  Gender,3,M,Miotso,Rosemary Kimani,Dr.,,53,"Communication & Media 
+Studies"
+,100,COMM 113,Introduction to Communication,3,M,Miotso,Rosemary Kimani,Dr.,,,"Communication & Media 
+Studies"
+,100,COMM 113.,"Introduction to Communication 
+( Feb Cohort)",3,M,Miotso,Rosemary Kimani,Dr.,,,"Communication & Media 
+Studies"
+,200,COMM 204,Media Ethics,3,M,Miotso,Rosemary Kimani,Dr.,,35,"Communication & Media 
+Studies"
+,300,COMM 311,Advanced Print Journalism ,3,M,Miotso,Kofi Akpabli,Mr.,Full Time,45,"Communication & Media 
+Studies"
+,400,COMM 411,Feature Writing,3,M,Miotso,Kofi Akpabli,Mr.,Full Time,53,"Communication & Media 
+Studies"
+,200,COMM 210,African Studies,3,M,Miotso,Kofi Akpabli,Mr.,Full Time,35,"Communication & Media 
+Studies"
+,400,COMM 404,Newspaper Workshop (Copy Editing Skills),4,M,Miotso,Kofi Akpabli,Mr.,Full Time,53,"Communication & Media 
+Studies"
+,200,COMM 203,Introduction to Public Relations,3,M,Miotso,Kofi Akpabli,Mr.,Full Time,35,"Communication & Media 
+Studies"
+,300,COMM 301,Communication Research and Design,3,M,Miotso,Kofi Akpabli,Mr.,Full Time,45,"Communication & Media 
+Studies"
+,300,COMM 307,Class/Group Project,3,M,Miotso,Kofi Akpabli,Mr.,Full Time,45,"Communication & Media 
+Studies"
+,300,COMM 315,Communication Theory ,3,M,Miotso,"DeniseDiana Duncan
+",Dr.,Full Time,45,"Communication & Media 
+Studies"
+,300,COMM 312,Advanced Public Relations,3,M,Miotso,DeniseDiana Duncan,Dr.,Full Time,45,"Communication & Media 
+Studies"
+,300,COMM 306,Online Journalism,3,M,Miotso,DeniseDiana Duncan,Dr.,Full Time,35,"Communication & Media 
+Studies"
+,400,COMM 402,Seminar in New Media,3,M,Miotso,DeniseDiana Duncan,Dr.,Full Time,53,"Communication & Media 
+Studies"
+,400,COMM 406,Public Relations Workshop,4,M,Miotso,DeniseDiana Duncan,Dr.,Full Time,53,"Communication & Media 
+Studies"
+,100,COMM 102,"Introduction to Online Media 
+Understanding   ",3,M,Miotso,"Philo Mintah 
+",Ms,Full Time,,"Communication & Media 
+Studies"
+,100,COMM 102.,"Introduction to Online Media 
+Understanding ( Feb. Cohort )",3,M,Miotso,"Philo Mintah 
+",,Full Time,,"Communication & Media 
+Studies"
+,100,COMM 111,Introduction to Creative writing,3,M,Miotso,"Philo Mintah 
+",,Full Time,,"Communication & Media 
+Studies"
+,100,COMM 111.,"Introduction to Creative writing 
+(Feb. Cohort)",3,M,Miotso,"Philo Mintah 
+",,Full Time,,"Communication & Media 
+Studies"
+,300,COMM 313,Speech Writing & Public Speaking,3,M,Miotso,"Philo Mintah 
+",,Full Time,45,"Communication & Media 
+Studies"
+,200,COMM 206,Political and Social History of Ghana,3,M,Miotso,"philo Mintah 
+",,Full Time,35,"Communication & Media 
+Studies"
+,400,COMM 412,Advanced Creative Writing,3,M,Miotso,"Philo Mintah 
+",,Full Time,53,"Communication & Media 
+Studies"
+,100,COMM 103,Language and study skills ,3,M,Miotso,Tchume,Mr.,Full Time,,"Communication & Media 
+Studies"
+,100,COMM 103.,Language and study skills ( Feb. Cohort),3,M,Miotso,Tchume,Mr.,Full Time,,"Communication & Media 
+Studies"
+,300,COMM 301,Elements of Book Publishing,3,M,Miotso,Bernard Clive,Mr.,Adjunct,45,"Communication & Media 
+Studies"
+,400,COMM 416,Electronic Publishing,4,M,Miotso,Bernard Clive,Mr.,Adjunct,53,"Communication & Media 
+Studies"
+,100,ECON 109,Basic Statistics,3,M,Miotso,Ernest Somua-Wiafe,Mr.,Full Time,,Economics
+,100,ECON 109,Basic Statistics ( Feb. Cohort),3,M,Miotso,Ernest Somua-Wiafe,Mr.,Full Time,,Economics
+,200,COMM 201,Media Law,3,M,Miotso,Bright Appiah,Mr.,,35,"Communication & Media 
+Studies"
+,200,CUVL 212,Ethics and Leadership Studies,3,M,Miotso,Cephas Narh,Dr.,Full Time,35,"Communication & Media 
+Studies"
+,300,COMM 302,Photojournalism,3,M,Miotso,Michael Yamoah,Mr.,Adjunct,45,"Communication & Media 
+Studies"
+,300,COMM 320   ,Radio & TV Production,3,M,Miotso,Naa Ashorkor,,Adjunct,45,"Communication & Media 
+Studies"
+,300,COMM 320.   ,Radio & TV Production.,3,M,Miotso,,,,45,"Communication & Media 
+Studies"
+,300,CBHR 303,Industrial Relations & Labour Law,3,"M, E&W",Christ Temple,Rev. Paa Ekow Quaye,,Full Time,,Human resource management
+,300,CBHR 305,Human Resource Planning ,3,M&W,Miotso,Rev. Paa Ekow Quaye,,Full Time,,Human resource management
+,400,CBHR 401,Performance & Rewards Management ,3,M&W,Miotso,Ophelia D Zungbey ,Mrs.,Full Time,,Human resource management
+,400, CBHR 403,Career Development Systems,3,M&W,Miotso,Ophelia D Zungbey ,Mrs.,Full Time,,Human resource management
+,400,CBHR 407,Human Relations in Organization,3,M&W,Miotso,Ophelia D Zungbey ,Mrs.,Full Time,,Human resource management
+,200,CBFW 205,Human Behaviour in Organisation,3,M&W,Miotso,Noble Osei-Bonsu,Mr.,Full Time,,Human resource management
+,100,CBFW105,Introduction to Psychology,3,"M, E&W",Christ Temple,Noble Osei-Bonsu,Mr.,Full Time,,Human resource management
+,400,CBHR 407,Human Relations in Organization,3,M&W,Christ Temple,Frederick Frimpong ,Mr.,Full Time,,Human resource management
+,200,CBFW 205,Human Behaviour in Organisation,3,"M, E&W",Christ Temple,Frederick Frimpong ,Mr.,Full Time,,Human resource management
+,300,CBHR 305,Human Resource Planning ,3,"M, E&W",Christ Temple,Eleanor Akoto,Mrs.,Full Time,,Human resource management
+,400,CBHR 401,Performance & Rewards Management ,3,M&W,Christ Temple,Eleanor Akoto,Mrs.,Full Time,,Human resource management
+,300,CBHR 303,Industrial Relations & Labour Law,3,M&W,Miotso,Lawyer Opare,Mr.,Full Time,,Human resource management
+,400,CBHR 403,Career Development Systems,3,M&W,Christ Temple,Evans Sokro,Dr.,Full Time,,Human resource management
+,100,CBFW 103,Introduction to Logic ,3,M&W,Miotso,Rev. Sosthenes Tsribi,Dr.,Adjunct,,Human resource management
+,100,CBFW 103,Introduction to Logic ,3,"M, E&W",Christ Temple,Rev. Sosthenes Tsribi,Dr.,Adjunct,,Human resource management
+,MBA 2,GBHR 601,Training & Development ,6,"M, E&W",Miotso& Christ Temple,Evans Sokro,Dr.,Adjunct,,Human resource management
+,MBA 2,GBHR 603,Industrial Relations,6,"M, E&W",Miotso& Christ Temple,Evans Sokro,Dr.,Adjunct,,Human resource management
+,MBA 2,GBHR 605,Strategic HRM,6,E&W,Christ Temple,Rev. Paa Ekow Quaye,,Adjunct,,Human resource management
+,MBA 2,GBHR 605,Strategic HRM,6,W,Miotso,Rev. Paa Ekow Quaye,,Adjunct,,Human resource management
+,MBA 1,GBCO 601,Organizational Behaviour,6,E&W,Christ Temple,Noble Osei-Bonsu,Mr.,Adjunct,,Human resource management

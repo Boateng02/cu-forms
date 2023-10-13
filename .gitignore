@@ -1,0 +1,4 @@
+test.db
+env
+__pycache__
+migrations

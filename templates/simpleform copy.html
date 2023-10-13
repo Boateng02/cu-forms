@@ -1,0 +1,375 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/css/form.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    
+    <br/>
+    <h6>This questionnaire is designed to enable us assess the overall performance of each lecturer. Your candid and objective appraisal will go a long way in enhancing the quality of the programme.</h6>
+    <br/>
+
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+
+        <h4 style="font-weight:bold;">Section A</h4>
+        <h6 class="text-muted">This information is to be provided by the officer in charge</h6>
+        <br/>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.name.label}}</label>
+            {{form.name (id="lecturer" ,class="answerCard", placeholder="Enter The Lecturers Name") }}
+        </div>
+
+        
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.part.label}}</label>
+            {{form.part (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.department.label}}</label>
+            {{form.department (id="department", class="answerCard", placeholder="Enter The Department") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.course.label}}</label>
+            {{form.course (id="courses", class="answerCard", placeholder="Enter The Course Name") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.semester.label}}</label>
+            {{form.semester(class="answerCard", placeholder="Enter The Semester") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.session.label}}</label>
+            {{form.session (id="stream", class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.classSize.label}}</label>
+            {{form.classSize (id="noOfStudents", class="answerCard", placeholder="Enter The Class Size") }}
+        </div>
+
+
+        <br/>
+
+        <h4 style="font-weight:bold;">Section B</h4>
+        <h6 class="text-muted">Please assess the lecturer's performance using the key provided below by ticking the box you consider appropriate</h6>
+        <br/>
+
+        <!-- <h4 class="text-muted" style="text-align: center;">SECTION B</h4>
+        <h6 class="text-muted" style="text-align: center;">Please asses the lecturer's performance using the key provided below by ticking the box you consider appropriate</h6> -->
+
+        <h6 class="text-muted" style="text-align: center;">Course Content</h6>
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.one.label}}</label>
+            {{form.one (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.two.label}}</label>
+            {{form.two (class="answerCard") }}
+        </div>
+
+        <h6 class="text-muted" style="text-align: center;">Class Attendance</h6>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.three.label}}</label>
+            {{form.three (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.four.label}}</label>
+            {{form.four (class="answerCard") }}
+        </div>
+
+        <h6 class="text-muted" style="text-align: center;">Mode of Delivery</h6>
+
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.five.label}}</label>
+            {{form.five (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.six.label}}</label>
+            {{form.six (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.seven.label}}</label>
+            {{form.seven (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.eight.label}}</label>
+            {{form.eight (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.nine.label}}</label>
+            {{form.nine (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.ten.label}}</label>
+            {{form.ten (class="answerCard") }}
+        </div>
+
+        <h6 class="text-muted" style="text-align: center;">Assessment</h6>
+
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.eleven.label}}</label>
+            {{form.eleven (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.twelve.label}}</label>
+            {{form.twelve (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.thirteen.label}}</label>
+            {{form.thirteen (class="answerCard") }}
+        </div>
+
+        <h6 class="text-muted" style="text-align: center;">General Assessment Of Lecturer</h6>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.fourteen.label}}</label>
+            {{form.fourteen (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.fifteen.label}}</label>
+            {{form.fifteen (class="answerCard") }}
+        </div>
+
+        <h4 style="font-weight:bold;">Section C</h4>
+        <h6 class="text-muted">Assessment of Course. Please provide statementes in the spaces provided below:</h6>
+        <br/>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.sixteen.label}}</label>
+            {{form.sixteen (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.seventeen.label}}</label>
+            {{form.seventeen (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.eighteen.label}}</label>
+            {{form.eighteen (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.nineteen.label}}</label>
+            {{form.nineteen (class="answerCard") }}
+        </div>
+<!-- <div style="margin: auto; text-align:center; margin-bottom: 2vh;">
+    {{form.submit (class="button", style="width:50%;")}}
+</div> -->
+<div style="margin: auto; text-align:center; margin-bottom: 2vh;">
+    <!-- {{form.submit (class="button", style="width:50%;")}} -->
+    <a href='{{url_for("allSurveys")}}'></a>
+    <button class="button" style="width: 50%;">Submit</button>
+</div>
+      
+    </form>
+    
+</div>
+
+<script>
+
+    // TODO: GET VALUES FROM THE PYTHON SCRIPT INSTEAD!
+
+    fetch('/alllecturers').then(function(response) {
+        response.json().then(function(data) {
+            console.log("-----------data-------------")
+            console.log(data.lecturers)
+            var alllecturers = data.lecturers
+        })
+    });
+    // const alllecturers = lectures
+
+    function autocomplete(inp, arr) {
+    //  var lecturers = alllecturers
+      /*the autocomplete function takes two arguments,
+      the text field element and an array of possible autocompleted values:*/
+      var currentFocus;
+      /*execute a function when someone writes in the text field:*/
+      inp.addEventListener("input", function(e) {
+          var a, b, i, val = this.value;
+          /*close any already open lists of autocompleted values*/
+          closeAllLists();
+          if (!val) { return false;}
+          currentFocus = -1;
+          /*create a DIV element that will contain the items (values):*/
+          a = document.createElement("DIV");
+          a.setAttribute("id", this.id + "autocomplete-list");
+          a.setAttribute("class", "autocomplete-items");
+          /*append the DIV element as a child of the autocomplete container:*/
+          this.parentNode.appendChild(a);
+          /*for each item in the array...*/
+          for (i = 0; i < arr.length; i++) {
+            /*check if the item starts with the same letters as the text field value:*/
+            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+              /*create a DIV element for each matching element:*/
+              b = document.createElement("DIV");
+              /*make the matching letters bold:*/
+              b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+              b.innerHTML += arr[i].substr(val.length);
+              /*insert a input field that will hold the current array item's value:*/
+              b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+              /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+                  /*insert the value for the autocomplete text field:*/
+                  inp.value = this.getElementsByTagName("input")[0].value;
+                  /*close the list of autocompleted values,
+                  (or any other open lists of autocompleted values:*/
+                  closeAllLists();
+              });
+              a.appendChild(b);
+            }
+          }
+      });
+      /*execute a function presses a key on the keyboard:*/
+      inp.addEventListener("keydown", function(e) {
+          var x = document.getElementById(this.id + "autocomplete-list");
+          if (x) x = x.getElementsByTagName("div");
+          if (e.keyCode == 40) {
+            /*If the arrow DOWN key is pressed,
+            increase the currentFocus variable:*/
+            currentFocus++;
+            /*and and make the current item more visible:*/
+            addActive(x);
+          } else if (e.keyCode == 38) { //up
+            /*If the arrow UP key is pressed,
+            decrease the currentFocus variable:*/
+            currentFocus--;
+            /*and and make the current item more visible:*/
+            addActive(x);
+          } else if (e.keyCode == 13) {
+            /*If the ENTER key is pressed, prevent the form from being submitted,*/
+            e.preventDefault();
+            if (currentFocus > -1) {
+              /*and simulate a click on the "active" item:*/
+              if (x) x[currentFocus].click();
+            }
+          }
+      });
+      function addActive(x) {
+        /*a function to classify an item as "active":*/
+        if (!x) return false;
+        /*start by removing the "active" class on all items:*/
+        removeActive(x);
+        if (currentFocus >= x.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = (x.length - 1);
+        /*add class "autocomplete-active":*/
+        x[currentFocus].classList.add("autocomplete-active");
+      }
+      function removeActive(x) {
+        /*a function to remove the "active" class from all autocomplete items:*/
+        for (var i = 0; i < x.length; i++) {
+          x[i].classList.remove("autocomplete-active");
+        }
+      }
+      function closeAllLists(elmnt) {
+        /*close all autocomplete lists in the document,
+        except the one passed as an argument:*/
+        var x = document.getElementsByClassName("autocomplete-items");
+        for (var i = 0; i < x.length; i++) {
+          if (elmnt != x[i] && elmnt != inp) {
+            x[i].parentNode.removeChild(x[i]);
+          }
+        }
+      }
+      /*execute a function when someone clicks in the document:*/
+      document.addEventListener("click", function (e) {
+          closeAllLists(e.target);
+          console.log("e.target.value")
+          console.log(e.target.getElementsByTagName('input')[0].value)
+          localStorage.setItem("lecturerName", e.target.getElementsByTagName('input')[0].value)
+          findLecturer()
+
+      });
+    }
+
+    console.log("defining lecturers")
+    
+    /*An array containing all the country names in the world:*/
+    var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+    var lectures = alllecturers
+    console.log(lectures)
+    // var lectures = [ "Asso. Prof. Adelaide Naa Amerley Kastner", "Dr. Ernest Bruce-Twum", "Mr. Julius Aidoo-Buameh", "Mr. Philip Atimbire Ayagre", "Mr. John Ackon", "Mr. Kwabena Agyarko Gyekye", "Dr. Christopher Boachie", "Mr. Joseph Emmanual Tetteh", "Dr. (Mrs) Eunice Adwoa Adu-Darko", "Dr. (Mrs) Gloria-Clarissa O Dzeha", "Dr. Andrews Kwablah", "Dr. Daniel Ofori-Sasu", "Dr. Evans Sokro", "Mr. Noble Kwasi Adjei Osei - Bonsu", "Mrs. Eleanor Joyce Korngo Akoto", "Mrs. Ophelia Delali Zungbey", "Mr. John Ofori Damoah", "Mr. Michael Akomeah Ofori Ntow", "Mr. Frederick Frimpong", "Mr. Frederick K Asamoah", "Ms. Ruby Melody Agbola", "Mr. Philip Asibu-Yartey", "Mr. Alexander Abada", "Dr. Benjamin Otchere-Ankrah", "Mr. Kems Adu-Gyan", "Dr. Nick Fobih", "Mr. Hilary Kofi Frimpong", "Mrs. Gladys Narki Kumi Som", "Mr Isaac Jerry Kwabena Asare", "Ms. Cynthia Bulley", "Dr. Mrs. Felicia De Heer", "Mr. Peter Anabila", "Mr. Robert Kwame Dzogbenuku", "Mr. Clemence Alomenu", "Dr. Ebenezer Asare Effah", "Mr. Victor Achiriga", "Mr. Michael Mba Allan", "Dr. Joshua Kofi Doe", " ", "Dr. Joseph Amoah Nyarkor", "Mrs. Ninnette Quaofio", "Mrs. Joy Afua Ankrah", "Dr. James Adjei Gyasi-Addo", "Mr. Delali Gadzekpo", "Mr. Jonathan B Nerquaye-Tetteh", "Mr. Mawuli Togbi Fianu", "Mr. Michael Farkye Agyemang", "Mr. Yaw Kuffour Sarbeng", "Mr. Emmanuel Kusi Ofori-Sarpong", "Mrs. Adeline Mawupemor Kore", "Dr. Ebenezer Ashley", "Mr. Frank Marcellus Busumtwi", "Dr. Sam Cudjoe Mereku Ofori", "Dr. Benjamin Thomas Osafo", " ", "Dr. Stephen Abenney-Mickson", "Dr. Kingsford Sarkodie Obeng Kwakye", "Dr. Kingsford Kissi Mireku", "Mr. Joel Kwesi Appiah", "Ms. Regina Naa DEDEI Crabbe", "Mr. Frederick Adu Gardiner", "Dr. Nana Baah Gyan", "Mr. Bright Selorm Kodzo Anibrika", "Dr. Seth Alornyo", "Dr. Moses Yartey Mensah", "Dr. Daniel Anobaah Ankrah", "Dr. Victor Owusu", "Mr. Charles Fomevor", "Mr. Emmanueal Ayam", " ", "Prof. Clara Korkor Fayorsey", "Dr. Antwi Ransford ", "Mr. Kofi Akpabli", "Dr. (Mrs.) Marian Tsegah", "Dr. Rosemary Wamuchii Kimani", "Dr. Denise Diana Duncan", "Ms. Abena Gyampo", "Mr. Mawuli Beduya", "Mrs Gladys Akua Agyeiwaa Manieson", "Rev.Fr. (Dr.) Casimir Komla Adjoe", "Ms Philomina O Mintah", "Mr. Michael Tchume", "Mr. David L Doade", "Mr. Etornam Komla Buami", "Rev. Dr. Godson Ahiabor", "Dr. Edmund Kwablah", "Mr. Daniel Offei", "Mr. Paragon Pomeyie", "Mr. George Hughes", "Mr. Ernest Somua-Wiafe", "Mr. Kofi Korle", "Asso. Prof. Adusei Jumah", "Dr. Feizel Ayitey Aryee", "Dr Johnie Kodjo Nyametso", "Mrs Memuna Mawusi Mattah", "Dr. Fred Ato Otchere ", "Mr. Elvis Kyere-Gyeabour", "Mr. Francis Srofenyoh", "Mr. Kofi Aaron Abboa Offei Agyei-Henaku", "Dr. Mrs Charlotte Badu-Prah", "Ms. Aku Agyeiwaa-Afrane ", "Dr John Ernest Koku", "Ms. Worlali Nyaledzigbor", "Dr. Joseph Ocran", "Dr. (Mrs.) Margaret Amenuke-Edusei", "Ms. Amma Serwaah Aboagye Kyei (Ofori-Amanfo)", "Mrs Bernice Agyeiwaa Essien", "Mr. Ernest Kekeli Bobo", "Rev. Dr. Adina Anita Naa-Abia Addy", "Mr. Feikoab Parimah", "Mr. George Ofosu Oti", "Rev. Dr. Kwasi Addo Sampong", "Mrs Aku Hayfron", "Dr. Mrs. Doris Ekua Yalley", "Rev. Charles Amanor-Commey", "Rev. Andrew Gbandeh-Mitta", "Dr. Robert Owusu Agyarko", "Pst Sarfo Prince Osei", "Rev. Aaron Adjei", "Mr. Isaac Boapeah", "Rev Christopher Kwaku Krebeti", "Dr. Fredua Kwasi-Agyeman", "Dr. Robert Ago Mensah ", " ", "Dr. Mary Opare", "Mrs. May Osae-Addae", "Dr. Mrs. Elizah Amoah", "Mrs. Brenda Adei Osei-Assibey", "Mrs. Justina Serwaa Yevu-Johnson", "Ms. Judy Bueki Puplampu", "Mrs. Maame Oduraa Odum", "Mr. Benson Owusu", "Ms. Stella Sagoe", "Ms. Thywill Amenuveve Degley", "Mr. Benjamin Twiri Ampah", "Dr. (Mrs) Susan Amuasi", "Dr. (Rev.) Isaac Ekow Ennin", "Dr. James-Paul Kretchy", "Mr. Peter Kwabena Appiah", "Mr. William Agbozo", "Dr. George N Doku", "Asso. Prof. Jemmy Felix Takrama", "Dr. Saviour Kweku Adjenti", "Dr. Eric Essandoh Amuah", " ", "Asso. Prof. Kwasi Adomnako Ohemeng", "Asso.Prof. Philip Nortey", "Dr. Anthony Sarfo", "Ms. Akua Frema Barfour", "Mr. Bright Selorm Addy", "Mr. David Mintah", "Mr. John Antwi Apenteng", "Mrs Christiana Osei-Asare", "Ms Anna Kwarley Quartey", "Ms Phoebe Ohene-Marfo (Goku)", "Mrs Esther Eyram Asare Yeboah", "Mr. Ivan Nyarko-Danquah", "Dr. Raymond Ashalley Tetteh", "Ms Mawunyo Peace Doe", "Mr. Kwabena Oteng-Boahen", "Ms. Miriam Tagoe", "Mr. Samuel Korsah", "Dr. Prince Nartey-addy Amoyaw ", "Mr. Michael Worla Klu", " ", "Dr. Josiah De-Graft-Quansah", "Mr. Nicholas Freduah Kwarteng", "Mrs Susanna Afutu", "Mrs. Eunice Appiah-Asare", "Ms Maame Ofewah Sarpong", "Mr. Emmanuel Kwasi Opare-Wiredu", "Ms. Beryl Sunkwa-Mills", "Dr. John Ephraim Baiden", "Ms. Gertrude Arthur", "Mr. Yaw Berhene Bonsu", "Mrs. Sharon Ama Blankson-Abada", "Ms Esther Awovi Akafia", "Mr. Seth Dwira", "Mr. Bill Graham Osei-Akomea", "Mr Emmanuel Kwame Nkansa-Ninwie", "Mr. Paul Obeng Atiemo", "Mrs. Freda Marfo-Ahenkorah", "Mr. David Asumda" ]
+    // var lectures = [ "James Anani Amezi", "Josiah Malcolm", "Philip Asibu Yartey", "Lawyer Fred Asamoah\n\nLawyer Fred Asamoah", "Lawyer Fred Asamoah", "Kofi Frimpong", "Kems Ohene Gyan", "Isaac Asare", "Nick Fobih", "Ben Otchere-Ank.", "Gladys Kumi Som", "Freeman Osei \u2013 Tete", "Ruby Agbola", "Mark Boadu", "Adelaide Kastner", "Alex Abada", "Lawyer Opare-Wiredu", "Raphael Asamoah", "Richard Boso", "Cammilus Wongnaa", "Josiah Malcom", "Alfred Gand", "Eric Adjei", "Lawrence Abladey", "Euclid Nikoi Kotey", "Edward Kofi Ackom", "Joseph Oddei", "J. Oduro-Yeboah", "Abraham Bamfo Boakye", "No Lecturer", "Gustave Amuzu", "Lorraine Johnson", "James Anani", "Joseph Odei", "J. Oduro Yeboah", "Edward Kofi Ackon", "Kwasi Sampong", "Doris E. Yalley", "Charles Amanor", "Andrew Gbandeh-Mitta", "Prince Osei-Sarfo", "Aaron Adjei", "Charles Owiredu", "Adjei-Acquah", "Robert Ago Mensah", "Ishmael Isaac Arthur", "Isaac Boapeah", "Fredua Agyeman", "Eugene Milledzi", "Eunice Torto-Seidu", "Rev. Addo-Sampong", "Denise Duncan", "Phinihas Acheampong", "Ruth Keziah-Annan", "Rev. Aaron Adjei", "Rev. Fr. C. Adjoe", "Albert L. Dare", "", "Cornelius Azasu", "Worlali Nyaledzigbor", "Joseph Ocran", "Adina Addy", "Eugenia Yamson", "Amma Serwaa Aboagye Kyei", "Feikoab Parimah", "Noble Osei Bonsu", "Derek Oppong, Adjunct", "Ms Worlali Nyaledzigbor, \nMrs Amma Serwaa Aboagye \nKyei, Mr Feikoab Parimah", "Ms Worlali Nyaledzigbor, \nMrs Amma Serwaa Aboagye Kyei, \nMr Feikoab Parimah", "Yvette Ussher", "Hadija Nyante", "Ernest Bruce-Twum", "Philip Ayagre", "John Ackon", "Abena Gyampo", "Etornam Komla Buami", "Marian Tsegah", "Rosemary Kimani", "Kofi Akpabli", "DeniseDiana Duncan", "Philo Mintah", "philo Mintah", "Tchume", "Bernard Clive", "Ernest Somua-Wiafe", "Bright Appiah", "Cephas Narh", "Michael Yamoah", "Naa Ashorkor", "Rev. Paa Ekow Quaye", "Ophelia D Zungbey", "Noble Osei-Bonsu", "Frederick Frimpong", "Eleanor Akoto", "Lawyer Opare", "Evans Sokro", "Rev. Sosthenes Tsribi" ]
+    departments = [ "Department/ School","CBS", "ACCOUNTING", "FINANCE", "HRM", "MAG. & PA", "MARKETING", "ARCHITECTURE", "ARCHITECTURE (SLWP)", "SET", "CS & IT", "Civil Eng.", "CS & IT (Res. Asst)", "SGS", "Dean FASS", "Comm. & Media Studies", "Economics and Development Studies", "Social Sciences", "NURSING", "NURSING (SLWP)", "PA", "SoP", "PHARMACY ", "PHARMACY", "PHARMACY ", "Pharmacy", "Phamacology", "LAW", "Law" ]
+    /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+    autocomplete(document.getElementById("lecturer"), lectures);
+    </script>
+
+<script>
+    var state_select = document.getElementById("lecturer");
+    var city_select = document.getElementById("courses");
+    var stream_select = document.getElementById("stream");
+    var department_select = document.getElementById("department");
+    var noOfStudents_select = document.getElementById("noOfStudents");
+
+    // state_select.onchange = function(){
+    function findLecturer(){
+        console.log("Lecturer changed to " + localStorage.getItem("lecturerName"))
+        state = state_select.value;
+        fetch('/courses/' + state).then(function(response) {
+            response.json().then(function(data) {
+                console.log (data)
+                var optionHTML = '';
+                var departmentHTML = '';
+                var streamHTML = '';
+                var noOfStudentsHTML = '';
+                // return one object with multiple arrays?
+
+                // CourseTitle
+                for (var course of data.courses) {
+                    console.log("course")
+                    console.log(course)
+                    optionHTML += '<option value="' + course + '">' + course + '</option>';
+                }
+                // ClassSize
+                // Department
+                for (var department of data.departments) {
+                    console.log("classSize")
+                    console.log(department)
+                    departmentHTML += '<option value="' +department + '">' + department + '</option>';
+                }
+                
+                for (var stream of data.sessions) {
+                    streamHTML += '<option value="' + stream + '">' + stream + '</option>';
+                }
+                
+                for (var students of data.totalStudents) {
+                    // streamHTML += '<option value="' + stream + '">' + stream + '</option>';
+                    noOfStudentsHTML += '<option value="' + students + '">' + students + '</option>';
+                }
+                
+                
+                city_select.innerHTML = optionHTML;
+                stream_select.innerHTML = streamHTML;
+                department_select.innerHTML = departmentHTML;
+                noOfStudents_select.innerHTML = noOfStudentsHTML;
+            })
+        });
+    }
+
+</script>
+{% endblock %}

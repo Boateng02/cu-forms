@@ -1,0 +1,178 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<div class="container">
+
+<br>
+
+{% for responseBody in allLecturerAssessments %}
+
+<!-- <section> -->
+
+    <div class="row" style="justify-content: space-around">
+
+        <div data-aos="fade-up" class="dashboard-item" style="background-color: white;">
+     
+
+           <h4 style="text-align: center;">CENTRAL UNIVERSITY</h4>
+            <h6 style="color: black; text-align: center;">COMPLIANCE AND QUALITY ASSURANCE DIRECTORATE - SUMMARY REPORT ON SATC</h6>
+            
+            <div style="display: flex; justify-content: space-between; padding: 20px; padding-right: 100px;">
+                <div style="margin-right: 5vw;">
+                    <h6 style="font-weight: bold; color: black;">Name Of Lecturer:  {{responseBody['lecturer']['lecturerName']}}</h6>
+                    <h6 style="font-weight: bold; color: black;">Department:  {{responseBody['lecturer']['department']}}</h6>
+                    <h6 style="font-weight: bold; color: black;">Course:  {{responseBody['lecturer']['course']}}</h6>
+                    <h6 style="font-weight: bold; color: black;">Status:  {{responseBody['lecturer']['status']}}</h6>
+                    <h6 class="text-muted">Response Rate: {{responseBody['lecturer']['responseRate']}}%</h6>
+                    
+                    
+                </div>
+
+            <div>
+
+                <h6 style="font-weight: bold; color: black;">Class Size:  {{responseBody['lecturer']['classSize']}}</h6>
+
+                <h6 style="font-weight: bold; color: black;">No. Of Respondants: {{responseBody['lecturer']['respondants']}}</h6>
+                <h6 style="font-weight: bold; color: black;">Semester:  {{responseBody['lecturer']['semester']}}</h6>
+                <h6 style="color: black;">Remark: {{responseBody['remark']}}</h6>
+
+                <h6 style="color: black;">Session: Morning</h6>
+            </div>
+
+        </div>
+
+        </div>
+    <!-- </div>
+
+    <div class="row" style="justify-content: space-around;"> -->
+
+    <div class="table-responsive">
+        <table class="table table-striped
+        table-hover	
+        table-borderless
+        table-primary
+        align-middle" >
+            <thead class="table-light">
+                <tr>
+                    <th colspan="2">Course Area</th>
+                    <th>Percentage Score</th>
+                    <th>Weighted Mean Rating</th>
+                    <th>Mean Score %</th>
+                    <th>Mean Rating</th>
+                    <th>Remark</th>
+                    <th>Grand Mean Score</th>
+                    <th>Grand Mean Rating</th>
+                    <th>Remark</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <!-- COURSE CONTENT -->
+                    <tr class="table-primary" >
+                        <td scope="row" rowspan="2">Course Content</td>
+                            <td>Comprehensive Course Outline</td>
+                            <td>{{responseBody['courseContent']['courseOutline']['percentageScore']}}%</td>
+                            <td>{{responseBody['courseContent']['courseOutline']['weightedMeanScore']}}%</td>
+                            <td rowspan="2">{{responseBody['courseContent']['mean']}}%</td>
+                            <td rowspan="2">{{responseBody['courseContent']['meanRating']}}</td>
+                            <td rowspan="2">{{responseBody['courseContent']['remark']}}</td>
+                            <td rowspan="13">{{responseBody['grandMeanScore']}}</td>
+                            <td rowspan="13">{{responseBody['grandMeanRating']}}</td>
+                            <td rowspan="13">{{responseBody['remark']}}</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Course content was adequately covered</td>
+                        <td>{{responseBody['courseContent']['adequateContentCourse']['percentageScore']}}</td>
+                        <td>{{responseBody['courseContent']['adequateContentCourse']['weightedMeanScore']}}</td>
+                    </tr>
+                    <!-- CLASS ATTENDANCE -->
+
+                    <tr class="table-primary" >
+                        <td scope="row" rowspan="2">Class Attendance</td>
+                            <td>The Lecturer was regular</td>
+                            <td>{{responseBody['classAttendance']['regularLecture']['percentageScore']}}%</td>
+                            <td>{{responseBody['classAttendance']['regularLecture']['weightedMeanScore']}}%</td>
+                            <td rowspan="2">{{responseBody['courseContent']['mean']}}%</td>
+                            <td rowspan="2">{{responseBody['courseContent']['meanRating']}}</td>
+                            <td rowspan="2">{{responseBody['courseContent']['remark']}}</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>The Lecturer was punctual</td>
+                        <td>{{responseBody['courseContent']['adequateContentCourse']['percentageScore']}}</td>
+                        <td>{{responseBody['courseContent']['adequateContentCourse']['weightedMeanScore']}}</td>
+                    </tr>
+                    <!-- MODE OF DELIVERY -->
+                    <tr class="table-primary" >
+                        <td scope="row" rowspan="6">Mode Of Delivery</td>
+                            <td>Command of the subject matter</td>
+                            <td>{{responseBody['classAttendance']['regularLecture']['percentageScore']}}%</td>
+                            <td>{{responseBody['classAttendance']['regularLecture']['weightedMeanScore']}}%</td>
+                            <td rowspan="6">{{responseBody['courseContent']['mean']}}%</td>
+                            <td rowspan="6">{{responseBody['courseContent']['meanRating']}}</td>
+                            <td rowspan="6">{{responseBody['courseContent']['remark']}}</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Communication of information</td>
+                        <td>{{responseBody['modeOfDelivery']['subjectMatterCommand']['percentageScore']}}</td>
+                        <td>{{responseBody['modeOfDelivery']['subjectMatterCommand']['weightedMeanScore']}}</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Interaction with students in class</td>
+                        <td>{{responseBody['modeOfDelivery']['communicationOfInformation']['percentageScore']}}</td>
+                        <td>{{responseBody['modeOfDelivery']['communicationOfInformation']['weightedMeanScore']}}</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Use of class time to promote learning</td>
+                        <td>{{responseBody['modeOfDelivery']['interactionWithStudents']['percentageScore']}}</td>
+                        <td>{{responseBody['modeOfDelivery']['interactionWithStudents']['weightedMeanScore']}}</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Promotion of independent study</td>
+                        <td>{{responseBody['modeOfDelivery']['promoteLearning']['percentageScore']}}</td>
+                        <td>{{responseBody['modeOfDelivery']['promoteLearning']['weightedMeanScore']}}</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Promotion of problem solving learning</td>
+                        <td>{{responseBody['modeOfDelivery']['promoteIndependentLearning']['percentageScore']}}</td>
+                        <td>{{responseBody['modeOfDelivery']['promoteIndependentLearning']['weightedMeanScore']}}</td>
+                    </tr>
+                    <!-- ASSESSMENT OF MATERIAL TAUGHT -->
+                    <tr class="table-primary" >
+                        <td scope="row" rowspan="3">Assessment Of Material Taught</td>
+                            <td>Response To Students Concerns</td>
+                            <td>{{responseBody['assessmentOfMaterialTaught']['responseToStudentConcerns']['percentageScore']}}%</td>
+                            <td>{{responseBody['assessmentOfMaterialTaught']['responseToStudentConcerns']['weightedMeanScore']}}%</td>
+                            <td rowspan="3">{{responseBody['assessmentOfMaterialTaught']['mean']}}%</td>
+                            <td rowspan="3">{{responseBody['assessmentOfMaterialTaught']['meanRating']}}</td>
+                            <td rowspan="3">{{responseBody['assessmentOfMaterialTaught']['remark']}}</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Adequacy Of Class Assignments</td>
+                        <td>{{responseBody['assessmentOfMaterialTaught']['adequaceOfClassAssignments']['percentageScore']}}</td>
+                        <td>{{responseBody['assessmentOfMaterialTaught']['adequaceOfClassAssignments']['weightedMeanScore']}}</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Marking And Discussoin Of Class Assignments</td>
+                        <td>{{responseBody['assessmentOfMaterialTaught']['discussionOfClassAssignments']['percentageScore']}}</td>
+                        <td>{{responseBody['assessmentOfMaterialTaught']['discussionOfClassAssignments']['weightedMeanScore']}}</td>
+                    </tr>
+
+
+                </tbody>
+                <tfoot>
+                    
+                </tfoot>
+        </table>
+        </div>
+    </div>
+
+<p style="page-break-before: always">
+
+</div>
+
+{% endfor %}
+
+    
+
+{% endblock %}

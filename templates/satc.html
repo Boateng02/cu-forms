@@ -1,0 +1,42 @@
+{% extends "layout.html" %} 
+
+{% block body %}
+<main>
+  <div class="hero">
+
+    <div class="container">
+        <br/>
+    <div class="row" >    
+              <div class="col-md-6">
+                  <div class="hero2">
+                      <div>
+                          <h5 style="font-weight: 400;" data-aos="fade-up"> Empowering Voice</h5>
+                          <h1 style="font-size: 50px; font-weight: 600;" data-aos="fade-up" data-aos-delay="1000">SATC FORMS </h1>
+
+                              <h6 class="text-muted" data-aos="fade-up" data-aos-delay="1500">Your opinion matters! Step up to the forefront of educational excellence by participating in the Central University Lecturer and Staff Assessment Survey. Your insights play a pivotal role in shaping the quality of our academic community. </h6>
+
+
+                          <a href='{{url_for("satc")}}'>
+                              <button class="pill-button mt-3" style="width: 100%;" data-aos="fade-up" data-aos-delay="2000" >Fill SATC Forms</button>
+                          </a>
+
+                      </div>
+                  </div>
+              </div>
+              <div data-aos="fade-in" data-aos-duration="2000" data-aos-delay="1000" class="col-md-6" >
+                  <div style="width: 80%; height: 80vh; border-radius: 30%; display: flex; justify-content: space-around;">
+                      <img src="../static/img/black.jpg" width="100%" height="100%" style="object-fit: cover; overflow: hidden; border-radius: 5%;" alt="" srcset="">
+                  </div>
+              </div>
+
+      </div>
+  </div>
+</div>
+
+
+</main>
+
+
+{% endblock %}
+
+  

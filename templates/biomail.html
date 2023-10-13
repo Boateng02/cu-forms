@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successful Action! </title>
+
+</head>
+<body> 
+
+    <style>
+        .pill-button{
+            background: #992621;
+            border: none;
+            color: white;
+            border-radius:10px ;
+            padding: 16px 22px;
+            box-shadow: 0 2px 8px 0 rgba(48, 44, 255, 0.1);
+            text-align: center;
+            font-weight: bold;
+            transition: width 2s;
+            width: 100%;
+        }
+    </style>
+
+    <div style="width: 100%;">
+    
+        <div class="title">
+            <!-- <h4><b>New Form Entry</b></h4> -->
+            <!-- <button class="btn btn-primary">Print</button> -->
+        </div>
+        <br>
+    
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                    <h5 style="font-weight: 100;">Full Name</h5>
+                    <h4 style="font-size: 20px; font-weight: bold;">{{data.name}} </h4>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <h5 style="font-weight: 100;">Staff ID</h5>
+                    <h4 style="font-size: 20px; font-weight: bold;">{{data.staffId}}</h4>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <h5 style="font-weight: 100;">Phone Number</h5>
+                    <h4 style="font-size: 20px; font-weight: bold;">{{data.phone}}</h4>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <h5 style="font-weight: 100;">Email Address</h5>
+                    <h4 style="font-size: 20px; font-weight: bold;">{{data.email}}</h4>
+                </div>
+                <hr>
+    
+    
+                <div style="margin-top: 3vh;">
+                    <a href="https://forms.central.edu.gh/confirmation/{{data.id}}">
+                    <button class="pill-button" style="background: green;
+                    border: none;
+                    color: white;
+                    border-radius:10px ;
+                    padding: 16px 22px;
+                    box-shadow: 0 2px 8px 0 rgba(48, 44, 255, 0.1);
+                    text-align: center;
+                    font-weight: bold;
+                    transition: width 2s;
+                    width: 100%;">Accept</button>
+                </div>
+                <div style="margin-top: 1vh;">
+                    <!-- <a href="forms.central.edu.gh/confirmation/{{data.id}}"> -->
+                    <button class="pill-button" style="background: red;
+                    border: none;
+                    color: white;
+                    border-radius:10px ;
+                    padding: 16px 22px;
+                    box-shadow: 0 2px 8px 0 rgba(48, 44, 255, 0.1);
+                    text-align: center;
+                    font-weight: bold;
+                    transition: width 2s;
+                    width: 100%;">Decline</button>
+                </div>
+            </div>
+            <h6>{{data.id}}</h6>
+        </div>
+    </div>
+</body>
+</html>

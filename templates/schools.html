@@ -1,0 +1,40 @@
+{% extends "dashlayout.html" %}
+
+{% block body %}
+
+
+<h4>All Schools</h4>
+
+<br>
+<div class="row">
+
+    {% for response in schools %}
+    <div class="col-md-4">
+        <a href="{{url_for('department', schoolSlug=response.slug)}}" style="text-decoration: none; color: black;">
+
+        <div data-aos="fade-up" class="dashboard-item" style="background-color: white;">
+            <div style="display: flex;">
+
+                <h6 style="font-weight: bold; color: black;">{{response.name}}</h6>
+                
+            </div>
+            <h6 class="text-muted">{{response.course}}</h6>
+            <h6 class="text-muted">{{response.semester}}</h6>
+            <h6 class="text-muted">{{response.lectureId}}</h6>
+            <!-- <h6 class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat recusandae quasi architecto natus? Blanditiis optio.</h6> -->
+            {% if lectureId %}
+            <a class="dashboard-item-text" href="{{url_for('lecturer', id=lecturerId)}}">
+                <h6>{{lectureId}}</h6>
+            </a>
+            {% else %}
+            <h6 class="dashboard-item-text">{{response.count}} departments</h6>
+            {% endif %}
+
+        </div>
+        </a>
+    </div>
+
+    {% endfor %}
+    </div>
+
+{% endblock %}

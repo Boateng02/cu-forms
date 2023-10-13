@@ -1,0 +1,59 @@
+<<<<<<< HEAD
+Level,CourseCode,CourseTitle,CreditHrs,Stream,Campus,LecturerTitle,LecturerTitle,LecturerStatus,NoOfStudents,Department
+=======
+Level,CourseCode,CourseTitle,CreditHrs,Stream,Campus,LecturerTitle,Lecturer,LecturerStatus,NoOfStudents,Department
+>>>>>>> ba86d987244b1347ce6cdb2808098b46c8338bb6
+400,ECON 463,International Trade,3,M,Miotso,Prof,Adusei Jumah,Full Time,12,Economics And Development Studies
+500,ECON 513,"Development
+Economics II",3,Blended,"Christ
+Temple",Prof,Adusei Jumah,Full Time,12,Economics And Development Studies
+500,ECON 521,International Economics I,3,Blended,Christ Temple,Prof,Adusei Jumah,Full Time,12,Economics And Development Studies
+400,ECON 408,International Finance,3,M,Miotso,Prof,Adusei Jumah,Full Time,12,Economics And Development Studies
+500,ECON 514,Development Economics II,3,Blended,Christ Temple,Prof,Adusei Jumah,Full Time,12,Economics And Development Studies
+500,ECON 526,International Economics II,3,Blended,Christ Temple,Mr,Adusei Jumah,Full Time,12,Economics And Development Studies
+200,ECON 101,"Introduction to Economics I (CBS) [Feb
+Cohort]",3,M,Christ Temple,Mr,George Hughes,Full Time,12,Economics And Development Studies
+200,ECON 207,Economy of Ghana I,3,M,Miotso,Mr,George Hughes,Full Time,3,Economics And Development Studies
+300,ECON 309,Labour Economics (CBS),3,Weekend,Christ Temple,Mr,George Hughes,Full Time,11,Economics And Development Studies
+400,ECON 441,Advanced Microeconomic Theory,3,M,Miotso,Mr,George Hughes,Full Time,12,Economics And Development Studies
+300,ECON 304,Research Methods (CBS),3,weekend,Christ Temple,Mr,George Hughes,Full Time,12,Economics And Development Studies
+300,ECON 303,Economy of Ghana,3,Morning,Miosto,Mr,George Hughes,Full Time,12,Economics And Development Studies
+300,ECON 303,Economy of Ghana,3,Weekend,Christ Temple,Mr,George Hughes,Full Time,12,Economics And Development Studies
+400,ECON 442,Advanced Macroeconomics,3,Morning,Miosto,Mr,George Hughes,Full Time,12,Economics And Development Studies
+200,ECON 203,Mathematics for Economists I,3,M,Miotso,Mr,George Hughes,Full Time,3,Economics And Development Studies
+300,ECON 309,Labour Economics (CBS),3,Evening,Christ Temple,Mr,Mr. Daniel Offei,Full Time,3,Economics And Development Studies
+300,ECON 323,Mathematical Economics I,3,M,Miotso,Mr,Mr. Daniel Offei,Full Time,11,Economics And Development Studies
+500,ECON 507,Quantitative Economics,3,Blended,Christ Temple,Mr,Mr. Daniel Offei,Full Time,11,Economics And Development Studies
+100,ECON 104,Introduction to Mathematics II (FASS),3,M,Miotso,Mr,Mr. Daniel Offei,Full Time,11,Economics And Development Studies
+200,ECON 204,Mathematics for Economists II (FASS),3,M,Miotso,Mr,Mr. Daniel Offei,Full Time,3,Economics And Development Studies
+300,ECON 308,Mathematical Economics II (FASS),3,M,Miotso,Mr,Mr. Daniel Offei,Full Time,11,Economics And Development Studies
+100,ECON 103,"Introduction to
+Mathematics I [Feb Cohort]",3,M,Miotso,Mr,Mr. Ernest Somua-Wiafe,Full Time,11,Economics And Development Studies
+100,ECON 105,"Introduction to Statistics I
+[Feb Cohort]",3,M,Miotso,Mr,Mr. Ernest Somua-Wiafe,Full Time,11,Economics And Development Studies
+100,ECON 109,Basic Statistics,2,M,Miotso,Mr,Mr. Ernest Somua-Wiafe,Full Time,11,Economics And Development Studies
+200,ECON 205,Principles of Statistics,3,M,Miotso,Mr,Mr. Ernest Somua-Wiafe,Full Time,3,Economics And Development Studies
+100,ECON 106,Introduction to Statistics II (FASS),3,M,Miotso,Mr,Mr. Ernest Somua-Wiafe,Full Time,3,Economics And Development Studies
+200,ECON 206,Applied Statistics (FASS),3,M,Miotso,Mr,Mr. Ernest Somua-Wiafe,Full Time,3,Economics And Development Studies
+300,ECON 304,Research Methods (CBS),3,M,Miotso,Mr,Mr. Ernest Somua-Wiafe,Full Time,3,Economics And Development Studies
+300,ECON 304,Research Methods (CBS),3,Weekend,Miotso,Mr,Mr. Ernest Somua-Wiafe,Full Time,3,Economics And Development Studies
+100,ECON 101,"Introduction to
+Economics I (CBS)",3,Weekend,Miotso,Mr,Kofi Korle,Full Time,3,Economics And Development Studies
+200,ECON 202,"Principles of
+Economics II (FASS)",3,M,Miotso,Mr,Kofi Korle,Full Time,3,Economics And Development Studies
+300,ECON 309,"Labour Economics
+(CBS)",3,Weekend,Miotso,Mr,Kofi Korle,Full Time,3,Economics And Development Studies
+400,ECON 407,Economic Thought,3,M,Miotso,Mr,Kofi Korle,Full Time,12,Economics And Development Studies
+200,ECON 102,Introduction to Economics II (CBS),3,Weekend,Miotso,Mr,Kofi Korle,Full Time,12,Economics And Development Studies
+200,ECON 202,Principles of Economics II (FASS),3,M,Miotso,Mr,Kofi Korle,Full Time,3,Economics And Development Studies
+300,ECON 303,Economy of Ghana (CBS),3,Weekend,Miotso,Mr,Kofi Korle,Full Time,3,Economics And Development Studies
+400,ECON 406,Project Appraisal (FASS),3,M,Miotso,Mr,Kofi Korle,Full Time,12,Economics And Development Studies
+300,ECON 321,Econometrics I,3,M,Miotso,Prof,Anthony Amoah,Adjunct,11,Economics And Development Studies
+300,ECON 322,Econometrics II (FASS),3,M,Miotso,Prof,Anthony Amoah ,Adjunct,11,Economics And Development Studies
+500,ECON 508,Research Methods,3,Blended,Christ Temple,Prof,Anthony Amoah ,,11,Economics And Development Studies
+300,ECON 315,Intermediate Microeconomics I,3,M,Miotso,Dr,"
+Edmund Kwablah",Full Time,11,Economics And Development Studies
+300,ECON 309,Labour Economics,3,M,Christ Temple,Dr,"
+Edmund Kwablah",Full Time,11,Economics And Development Studies
+300,ECON 311,Research Methods I,3,M,Miotso,Dr,"
+Edmund Kwablah",Full Time,11,Economics And Development Studies

@@ -1,0 +1,88 @@
+{% extends "dashlayout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/css/form.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+        
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <h4 style="font-weight:bold;">Add A Course Allocation</h4>
+                <h6 class="text-muted">This information is to be provided by the officer in charge</h6>
+            </div>
+            {% if course %}
+                <a href="{{url_for('deleteCourseAllocation', id = course.id)}}">
+                    <div class="pill-button" style="width: fit-content;">Delete This Course</div>
+                </a>
+            {% endif %}
+
+        </div>
+        <br/>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.level.label}}</label>
+            {{form.level (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.courseCode.label}}</label>
+            {{form.courseCode (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.courseTitle.label}}</label>
+            {{form.courseTitle (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.creditHrs.label}}</label>
+            {{form.creditHrs (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.stream.label}}</label>
+            {{form.stream (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.campus.label}}</label>
+            {{form.campus (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.lecturerStatus.label}}</label>
+            {{form.lecturerStatus (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.lecturerTitle.label}}</label>
+            {{form.lecturerTitle (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.lecturer.label}}</label>
+            {{form.lecturer (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.department.label}}</label>
+            {{form.department (class="answerCard") }}
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label">{{form.numberOfStudents.label}}</label>
+            {{form.numberOfStudents (class="answerCard") }}
+        </div>
+
+        {{form.submit (class="pill-button") }}
+
+    </form>
+</div>
+{% endblock %}

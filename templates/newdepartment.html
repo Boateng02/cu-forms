@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<style>
+  .search-container {
+    text-align: center;
+    padding: 50px;
+  }
+
+  .card {
+    margin: 20px;
+  }
+  .dashboard-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff;
+  margin: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+}
+.dashboard-item h5, h2{
+  margin-top: 0;
+  color: #000;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; 
+}
+.dashboard-item h6{
+  margin: 2px;
+  color: #000;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif; 
+}
+</style>
+<hr style="width: 90%;">
+<div class="container">
+    <!-- <h3 class="text-center mt-4">Kindly Search for a Lecturer</h3> -->
+    
+        <h2 class="text-center">Lecturer's Name</h2>
+    <!-- <div class="search-container">
+      <form class="d-flex" method="post" role="search" >
+        <input class="form-control " type="search" name='searched' placeholder="Kindly Search for a lecturer" aria-label="Search" style="width: 60vw; padding: 12px;">
+        <button class="btn" style=" background: #992621; color: #fff; font-weight: 800; font-size: 18px; margin-left: 10px;" type="submit" >Search</button>
+      </form>
+    </div> -->
+    <h5  style="margin: 2vh 0 5vh 0;" class="text-muted">Kindly select Lecturer's Course Title & Department</h5>
+    <div class="row" style="justify-content: space-between;">
+        <div class="col-md-4">
+          <a href="/session" style="text-decoration: none; color: #000;">
+            <div class="dashboard-item" data-aos="fade-up">
+                <h5><b>Course Title</b></h5>
+                <h6>Course Code</h6>
+                <h6 class="text-muted">Department</h6>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="/session" style="text-decoration: none; color: #000;">
+            <div class="dashboard-item" data-aos="fade-up">
+                <h5><b>Course Title</b></h5>
+                <h6>Course Code</h6>
+                <h6 class="text-muted">Department</h6>
+            </div>
+        </a>
+        </div>
+        <div class="col-md-4">
+          <a href="/session" style="text-decoration: none; color: #000;">
+            <div class="dashboard-item" data-aos="fade-up">
+                <h5><b>Course Title</b></h5>
+                <h6>Course Code</h6>
+                <h6 class="text-muted">Department</h6>
+            </div>
+          </a>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+  {% endblock %}
+

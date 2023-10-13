@@ -1,0 +1,814 @@
+{% extends "layout.html" %}
+
+
+{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/form.css')}}">
+
+
+    <style>
+      
+        
+        
+        body{
+    font-family: 'Plus Jakarta Display', sans-serif;
+}
+
+.page-break {
+  page-break-before: always !important;
+}
+
+.code{
+    background-color: rgba(255, 0, 0, 0.453);
+    color: #992621;
+    margin: auto;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.inputValue{
+    border: none;
+    width: 100%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.inputValue:focus-visible{
+    border: none;
+    width: 100%;
+}
+
+.newInputForm{
+    /* border: none; */
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;
+    border: none;
+    background-color: white;
+}
+
+.loginClass{
+    /* background-image: url("../img/bg.png"); */
+    background: rgb(255,255,255);
+    /* background: linear-gradient(90deg, rgb(91, 0, 247) 0%, rgb(6, 52, 70) 47%, rgb(0, 103, 118) 100%); */
+    background: linear-gradient(90deg, rgb(247, 0, 82) 0%, rgb(48, 6, 70) 47%, rgb(0, 103, 118) 100%);
+	animation: gradient 15s ease infinite;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+	background-size: 400% 400%;
+
+}
+
+/* Default styles for the sidebar */
+#sticky-sidebar {
+  width: 250px;
+  transition: width 0.3s ease;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #sticky-sidebar {
+      width: 0;
+      overflow: hidden;
+  }
+
+  #main {
+      margin-left: 0;
+  }
+}
+
+/* Toggle icon styling */
+.toggle-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 24px; /* Adjust icon size as needed */
+}
+
+/* Media query for showing the icon */
+@media (max-width: 768px) {
+  .toggle-icon {
+    display: block; /* Show the icon for small screens */
+  }
+}
+
+
+section #login{
+    /* width: 100vw; */
+    background-color: #cccccc; 
+    height: 100vh;
+    
+}
+
+section{
+    padding-top:10vh;
+    padding-bottom:10vh;
+}
+
+.bar{
+    width: 100vw;
+    padding: 20px;
+    text-align: center ;
+    background-color: #992621;
+}
+
+.header{
+    color: white;
+    font-weight: bold;
+}
+/* 
+.overlay{
+    width: 30vw;
+    height: 100vh;
+    position: relative;
+    background-color: #992621;
+    padding:10vh;
+    
+} */
+.maincard{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 70vw;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-family: 'Plus Jakarta Display', sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+    /* position: relative; */
+}
+
+.flexrow{
+    display: flex;
+    justify-content: space-between;
+}
+
+#formsubmit{
+    margin-top:auto ;
+    padding: 30px;
+}
+
+.formSpacing .space{
+    padding: 10px;
+}
+.button{
+    border: none;
+    background-color: #992621;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 15px;
+}
+
+.pill-button{
+    background-color: #992621;
+    border: none;
+    color: white;
+    border-radius:10px ;
+    padding: 16px 22px;
+    box-shadow: 0 2px 8px 0 rgba(48, 44, 255, 0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: width 2s;
+    width: 100%;
+}
+
+.pill-button-alternate{
+  color: #992621;
+  border: 1px solid #992621;
+  background-color: white;
+  border-radius:10px ;
+  padding: 16px 22px;
+  box-shadow: 0 2px 8px 0 rgba(48, 44, 255, 0.1);
+  text-align: center;
+  font-weight: bold;
+  transition: width 2s;
+  width: 100%;
+}
+.outline-button{
+    border: 1px solid #019B9B;
+    background-color: transparent;
+    padding: 10px 30px;
+    color: #019B9B;
+    border-radius: 15px;
+}
+
+.roundform{
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+.line{
+    margin: 5px;
+}
+
+.space{
+    padding:20px; 
+    border-radius:10px;
+    width: 100%;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+.smallheader{
+    color: #992621; 
+    font-weight: 500; 
+    font-size: small;
+}
+
+.smallheader-black{
+    color: black; 
+    font-weight: 300; 
+    /* font-size: small; */
+}
+
+.smallheader-bold{
+    color: black; 
+    font-weight: 700; 
+    /* font-size: small; */
+}
+
+.smallheader-small{
+    color: #992621; 
+    font-weight: 200; 
+    cursor: pointer;
+    /* font-size: small; */
+}
+
+/* new report */
+
+.startCard{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.percentageEllipse{
+   height: 200px;
+   width: 200px;
+   border-radius:50% ;
+   text-align: center;
+   vertical-align: middle;
+   padding-top: 60px;
+   font-size: 80px;
+   margin: auto;
+   box-shadow: 0px 12.8681px 32.1702px rgba(8, 102, 102, 0.2);
+}
+
+.percentageEllipse h4{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.guideCard{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* width: 90%; */
+    display: flex;
+
+}
+
+.guideCard h6{
+    color: gray;
+    font-weight: 400;
+
+}
+
+.guidebar{
+width: 5px;
+background-color: greenyellow;
+border-radius:10px ;
+padding-left:10px ;
+padding-right:10px ;
+height: 95%;
+margin-top: auto;
+margin-bottom: auto;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.guidetext{
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.caption{
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+.recommendation{
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+border-radius:10px;
+}
+
+.circle-graph{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 20px solid #992621;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 160px;
+    background-color: white;
+
+}
+
+
+/* .hero2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    text-align: center;
+
+} */
+
+/* .hero2 {
+position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+} */
+
+.hero2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  
+}
+
+.hero2 h1 {
+    margin-top: 30px; /* Adjust this value as needed for vertical spacing */
+}
+
+
+.hero{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding: 10vh 0;
+    /* background: rgb(42,0,255);
+    background: linear-gradient(90deg, rgb(128, 106, 241) 0%, rgb(219, 86, 86) 47%, rgba(21,250,255,1) 100%); */
+    background: rgb(255,255,255);
+    /* background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(203, 240, 255) 47%, rgb(194, 255, 243) 100%); */
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(236, 203, 255) 47%, rgb(255, 194, 246) 100%);
+    /* object-fit:scale-down; */
+    display: flex;
+    align-items: center;
+    color: white;
+	background-size: 400% 400%;
+    justify-content: center;
+	animation: gradient 15s ease infinite;
+}
+/* body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+} */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.hero2Text{
+    font-weight: 600;
+    font-size: 60px;
+}
+
+
+.result-bold{
+    font-size: larger;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.card{
+    padding: 10px;
+}
+
+.infoBubble{
+    padding: 5vh;
+    border-radius: 30px;
+    border: none;
+    background-color: #c2fbd7;
+    margin-bottom: 5vh;
+}
+
+.infoBubbleHeading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: black;
+}
+
+.infoBubbleText{
+    font-size: small;
+}
+
+.surveyCard{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    border-radius: 20px;
+    padding: 20px;
+    /* display: flex; */
+    border: none;
+    margin-bottom: 10vh;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+
+.surveyImage{
+    background-color: #2200ff;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.surveyRow{
+    margin-bottom: 10vh;
+}
+
+.surveyHeading{
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    color: #444444;
+    font-size: 14px;
+    background: url("../img/hero-bg.jpg") top center;
+    box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+  }
+  
+ 
+
+  #footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: url("../img/hero-bg.jpg") top center;
+  }
+  
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-contact h3 {
+    font-size: 26px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 300;
+  }
+  #footer .footer-top .footer-contact img {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+  }
+  #footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #777777;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ca181e;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #ca181e;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #777777;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #ca181e;
+  }
+  
+  #footer .footer-newsletter {
+    font-size: 15px;
+  }
+  
+  #footer .footer-newsletter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid #cde5f6;
+  }
+  
+  #footer .footer-newsletter form input[type=email] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+  }
+  
+  #footer .footer-newsletter form input[type=submit] {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px 2px 20px;
+    background: #ca181e;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #footer .footer-newsletter form input[type=submit]:hover {
+    background: #ca181e;
+  }
+  
+  #footer .credits {
+    padding-top: 5px;
+    font-size: 13px;
+    color: #444444;
+  }
+  
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #ca181e;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 5px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .social-links a:hover {
+    background: #ca181e;
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
+/* hero from w3schoools */
+
+/* @media only screen and (max-width: 768px) {
+    .maincard{
+      width: 100%;
+      margin: 0;
+    }
+
+    section{
+        margin: 0;
+        padding: 0;
+    }
+  } */
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="text"] {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Increase the width and height of input fields */
+input[type="text"] {
+    width: 100%; /* Makes the input field as wide as its container */
+    padding: 10px; /* Adjust the padding as needed for spacing */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 10px; /* Add border radius to create curved edges */
+}
+
+/* Additional styles for table cells (optional) */
+th, td {
+    padding: 10px; /* Adjust the padding for table cells */
+}
+        </style>
+    
+
+
+    <title>Adjunct Faculty Claim Form</title>
+
+    
+    {% endblock %}
+
+
+    {% block body %}
+
+    <div class="hero2">
+    <h1>Adjunct Faculty Claim Form</h1>
+    <form method="POST" action="/submit">
+        <table>
+            <tr>
+                <th>Name of Lecturer:</th><br>
+                <td><input type="text" name="lecturer_name" required></td><br>
+            </tr>
+            <tr>
+                <th>Course:</th>
+                <td><input type="text" name="course" required></td>
+            </tr>
+            <tr>
+                <th>Academic Year:</th>
+                <td><input type="text" name="academic_year" required></td>
+            </tr>
+            <tr>
+                <th>Semester:</th>
+                <td><input type="text" name="semester" required></td>
+            </tr>
+            <tr>
+                <th>Month:</th>
+                <td><input type="text" name="month" required></td>
+            </tr>
+            <tr>
+                <th>Amount Before Tax:</th>
+                <td><input type="text" name="amount_before_tax" required></td>
+            </tr>
+            <tr>
+                <th>Transport Allowance:</th>
+                <td><input type="text" name="transport_allowance" required></td>
+            </tr>
+        </table>
+        
+        </table>
+        <h2>Claim Details</h2>
+        <table id="claimTable"> 
+            <tr>
+                <th>Date</th>
+                <th>Class</th>
+                <th>Number of Hours</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><input type="date" name="date[]"></td>
+                <td><input type="text" name="class[]"></td>
+                <td><input type="text" name="hours[]"></td>
+                <td><button type="button" onclick="deleteRow(this)">Delete</button></td> 
+            </tr>
+            
+        </table>
+        <button type="button" onclick="addRow()">Add Row</button>
+        <br><br>
+        <div>Total Hours: <span id="totalHours">0</span></div>
+        <div>Tax Amount: <span id="taxAmount">0</span></div>
+        <div>Amount After Tax: <span id="amountAfterTax">0</span></div>
+        <div>Total Amount Due: <span id="totalAmountDue">0</span></div>
+
+        <!-- <input type="submit" value="Submit"> -->
+        <button class="pill-button" type="submit">Submit</button>
+
+    </form>
+    
+    </div>
+
+
+
+    <script>
+        var totalHours = 0;
+        var amountBeforeTax = 0;
+        var transportAllowance = 0;
+
+        function updateTotalHours() {
+            var table = document.getElementById("claimTable");
+            var hoursInputs = table.querySelectorAll('input[name="hours[]"]');
+            totalHours = 0;
+
+            hoursInputs.forEach(function(input) {
+                var hours = parseInt(input.value) || 0;
+                totalHours += hours;
+            });
+
+            document.getElementById("totalHours").textContent = totalHours;
+            calculateTotalAmountDue();
+        }
+
+        function calculateTotalAmountDue() {
+            var taxRate = 0.15; // 15% tax rate
+            amountBeforeTax = parseFloat(document.querySelector('input[name="amount_before_tax"]').value) || 0;
+            transportAllowance = parseFloat(document.querySelector('input[name="transport_allowance"]').value) || 0;
+            var taxAmount = amountBeforeTax * taxRate;
+            var amountAfterTax = amountBeforeTax - taxAmount;
+            var totalAmountDue = amountAfterTax + transportAllowance;
+
+            document.getElementById("taxAmount").textContent = taxAmount.toFixed(2);
+            document.getElementById("amountAfterTax").textContent = amountAfterTax.toFixed(2);
+            document.getElementById("totalAmountDue").textContent = totalAmountDue.toFixed(2);
+        }
+
+        function addRow() {
+            var table = document.getElementById("claimTable");
+            var newRow = table.insertRow(table.rows.length);
+            var dateCell = newRow.insertCell(0);
+            var classCell = newRow.insertCell(1);
+            var hoursCell = newRow.insertCell(2);
+            var actionCell = newRow.insertCell(3); 
+            dateCell.innerHTML = '<input type="date" name="date[]">';
+            classCell.innerHTML = '<input type="text" name="class[]">';
+            hoursCell.innerHTML = '<input type="text" name="hours[]" oninput="updateTotalHours()">';
+            actionCell.innerHTML = '<button type="button" onclick="deleteRow(this); updateTotalHours()">Delete</button>'; 
+        }
+
+        function deleteRow(button) {
+            var row = button.parentNode.parentNode; 
+            row.parentNode.removeChild(row); 
+            updateTotalHours(); 
+        }
+    </script>
+{% endblock %}

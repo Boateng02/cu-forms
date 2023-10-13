@@ -1,0 +1,501 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+<link rel="stylesheet" href="../static/css/form.css">
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+
+{% endblock %}
+
+{% block body %}
+
+<div class="modal fade" id="longContentModal" tabindex="-1" role="dialog" aria-labelledby="longContentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="longContentModalLabel">Message from the Vice Chancellor</h4>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+          
+        </div>
+        <div class="modal-body">
+            <h6><b>Dear CU Alum, <span class="emoji" role="img" aria-label="Dear Graduate">🎓</span>,</b></h6>
+
+            <!-- Long content that will be scrollable -->
+            <p>The grace of the Lord is sufficient for you and for all your endeavours.</p>
+            <!-- Repeat the content to make it longer -->
+            <p>We are delighted to reach out to you and all our community of past students who now number
+                over 28,000 since graduation of our first cohort in 2002. We trust that God’s grace and keeping
+                has kept you all since you left the walls of CU. We further believe that the vision of our anthem,
+                that:
+                <p><b>‘…We live where dreams are born; where bold eagles dare to set sights on higher heights and
+                    dare to stand on destiny’s hills to welcome a new day… and reach beyond the stars’
+                </b></p>
+                is becoming real to you every day, week and month of each year
+            </p>
+            <!-- Repeat the content to make it longer -->
+            <p>Central University (CU) has come this far by the grace of God and in our 25th year, we renew our
+                commitment to improve our relations with our alum and our drive to improve our programmes and
+                student experiences.
+            </p>
+            <p>
+                We are keen to know how you are doing. We are keen to know how your studies at CU positioned
+                you for your life of service. We are anxious to obtain your feedback. We are thus embarking on
+                our first major Tracer Study – to follow up our alum and institutionalize a system of regular
+                engagement and regular feedback. We encourage all alum to take a few minutes to fill out this
+                questionnaire. Your feedback is very valuable and will enable us to fully appreciate and understand
+                your current status, identify areas where we can improve, and assess the effectiveness of our
+                programmes.
+            </p>
+            <p>
+                The data collected through this study will be used to improve our academic progammes, career
+                services, facilitate mentorship relationships between our current and past students and enable you our Alum, promote your current businesses, organisations, initiatives and prospects to the current
+                students and the University community as a whole. 
+            </p>
+            <p>
+                Relationships matter, and we recognize that over the years we have not done well in reaching out to you. We seek to rectify this.
+            </p>
+            <p>
+                Thank you for participating in this exercise and may the good Lord richly bless you.
+            </p>
+            <p>
+                Best regards,
+            </p>
+            <h6>
+               <b>Prof. Bill Buenar Puplampu
+                <br>
+                Vice Chancellor
+                </b>
+            </h6>
+            <button class="pill-btn"  data-dismiss="modal" aria-label="Close" style="background: #992621;">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+    <h1>Tracer Studies</h1>
+
+    <br/>
+    <p>Dear Graduate,
+        Through this questionnaire CU aims to track its graduates and receive feedback regarding the type of work, further study or other activity you are/have been involved in since you completed your study from Central University. The information provided will assist the institution to plan both for future educational needs and improve its programmes. Results of this tracer study will only be presented in summary form and individual responses will be kept strictly confidential. We would, therefore, highly appreciate if you could complete the following questionnaire and return it to us, at your earliest convenience. 
+        Thank you for your kind cooperation and support. </p>
+    <!-- <h6>This questionnaire is designed to enable follow your journey after Central University.</h6> -->
+    <br/>
+
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+
+        <h4 style="font-weight:bold;">Personal Information</h4>
+        <h6 class="text-muted">Kindly fill this form</h6>
+        <br/>
+
+            <div class="mb-3">
+            <label for="" class="form-label">{{form.gender.label}}</label><span class="required">*</span>
+                {{form.gender (class="answerCard", placeholder="Select") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.workadd.label}}</label><span class="required">*</span>
+                {{form.workadd (class="answerCard", placeholder="Work Address (optional)") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.mobile.label}}</label><span class="required">*</span>
+                {{form.mobile (class="answerCard", placeholder="Mobile No. (optional)") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.residence.label}}</label><span class="required">*</span>
+                {{form.residence (class="answerCard", placeholder="Please provide your country of residence") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.programme.label}}</label><span class="required">*</span>
+                {{form.programme (class="answerCard", placeholder="What programme did you pursue at CU?") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.completion.label}}</label><span class="required">*</span>
+                {{form.completion (class="answerCard", placeholder="Input Year") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.others.label}}</label><span class="required">*</span>
+                {{form.others (class="answerCard", onchange="checkValue(this)", placeholder="Yes / No") }}
+            </div>
+
+            <div class="mb-3" style="display: none;" id="current_status">
+                <label for="" class="form-label">{{form.status.label}}</label><span class="required">*</span>
+                {{form.status (class="answerCard", placeholder="") }}
+            </div>
+
+            <div class="mb-3" style="display: none;" id="current_pro">
+                <label for="" class="form-label">{{form.pro.label}}</label><span class="required">*</span>
+                {{form.pro (class="answerCard", placeholder="Please list programme") }}
+            </div>
+
+            <div class="mb-3" style="display: none;" id="current_institution">
+                <label for="" class="form-label">{{form.institution.label}}</label><span class="required">*</span>
+                {{form.institution (class="answerCard", placeholder="name of institution you are enrolled?") }}
+            </div>
+
+            <div class="mb-3" style="display: none;" id="current_completed">
+                <label for="" class="form-label">{{form.completed.label}}</label><span class="required">*</span>
+                {{form.completed (class="answerCard", placeholder="If completed please provide year of completion") }}
+            </div>
+
+            <div class="mb-3" style="display: none;" id="current_satisfaction">
+                <label for="" class="form-label">{{form.satisfaction.label}}</label><span class="required">*</span>
+                {{form.satisfaction (class="answerCard", placeholder="If completed please provide year of completion") }}
+            </div>
+
+            <br>
+            <h4 style="font-weight:bold;">Employment Information</h4>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.current.label}}</label>
+                {{form.current (class="answerCard", placeholder="e") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.job.label}}</label>
+                {{form.job (class="answerCard", placeholder="e") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.service.label}}</label>
+                {{form.service (class="answerCard", placeholder="e") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.orgname.label}}</label>
+                {{form.orgname (class="answerCard", placeholder="Name of Organization") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.orgadd.label}}</label>
+                {{form.orgadd (class="answerCard", placeholder="Organization Address(Optional) ") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.title.label}}</label>
+                {{form.title (class="answerCard", placeholder="What is your job title") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.orgtype.label}}</label>
+                {{form.orgtype (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.salary.label}}</label>
+                {{form.salary (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.employment.label}}</label>
+                {{form.employment (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.skills.label}}</label>
+                {{form.skills (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.timeframe.label}}</label>
+                {{form.timeframe (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.earn.label}}</label>
+                {{form.earn (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            
+            
+            
+            
+            <br>
+            <h4 style="font-weight:bold;">Type of Skill or Ability</h4>
+            
+            <p style="font-weight: bold;">There are a number of skills and abilities that may be required of employees. For each skill and ability, please identify how important that skill and ability is to performing your own work. Please indicate if the skill is extremely important, important, unimportant, or not at all important.</p>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.theoretical.label}}</label>
+                {{form.theoretical (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.technical.label}}</label>
+                {{form.technical (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.communication.label}}</label>
+                {{form.communication (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.comprehension.label}}</label>
+                {{form.comprehension (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.quantitative.label}}</label>
+                {{form.quantitative (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.computer.label}}</label>
+                {{form.computer (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.critical.label}}</label>
+                {{form.critical (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.research.label}}</label>
+                {{form.research (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.team.label}}</label>
+                {{form.team (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.planning.label}}</label>
+                {{form.planning (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.management.label}}</label>
+                {{form.management (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.quality.label}}</label>
+                {{form.quality (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.creative.label}}</label>
+                {{form.creative (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.adaptable.label}}</label>
+                {{form.adaptable (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.responsible.label}}</label>
+                {{form.responsible (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <p style="font-weight: bold;">When you first started working after graduation, how would you rate your level of preparedness for the following skills and abilities. Please tell us if you were well prepared, prepared, somewhat unprepared and completely unprepared:</p>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.theoreticals.label}}</label>
+                {{form.theoreticals (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.technicals.label}}</label>
+                {{form.technicals (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.communications.label}}</label>
+                {{form.communications (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.comprehensions.label}}</label>
+                {{form.comprehensions (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.quantitatives.label}}</label>
+                {{form.quantitatives (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.computers.label}}</label>
+                {{form.computers (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.criticals.label}}</label>
+                {{form.criticals (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.researchs.label}}</label>
+                {{form.researchs (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.teams.label}}</label>
+                {{form.teams (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.plannings.label}}</label>
+                {{form.plannings (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.managements.label}}</label>
+                {{form.managements (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.qualitys.label}}</label>
+                {{form.qualitys (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.creatives.label}}</label>
+                {{form.creatives (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.adaptables.label}}</label>
+                {{form.adaptables (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.responsibles.label}}</label>
+                {{form.responsibles (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.staying.label}}</label>
+                {{form.staying (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.schoolreturn.label}}</label>
+                {{form.schoolreturn (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.unemployed.label}}</label>
+                {{form.unemployed (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.work.label}}</label>
+                {{form.work (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.workframe.label}}</label>
+                {{form.workframe (class="answerCard", placeholder="Enter") }}
+            </div>
+
+
+
+
+
+            <br>
+            <h4 style="font-weight:bold;">Suggestions</h4>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.overall.label}}</label>
+                {{form.overall (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.recommend.label}}</label>
+                {{form.recommend (class="answerCard", placeholder="Enter") }}
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">{{form.suggestion.label}}</label>
+                {{form.suggestion (class="answerCard", placeholder="Kindly write your suggestion here") }}
+            </div>
+
+
+            <div style="margin: auto; text-align:center; margin-bottom: 2vh;">
+                <!-- {{form.submit (class="button", style="width:50%;")}} -->
+                <!-- <a href='{{url_for("allSurveys")}}'></a> -->
+                <!-- {{form.submit(class="button", style="width: 50%;") }} -->
+
+               <button class="button" style="width: 50%;">Submit</button>
+            </div>
+      
+    </form>
+    
+</div>
+
+
+<script>
+    function checkValue(selectElement) {
+        var selectedValue = selectElement.value;
+        if (selectedValue === "Yes") {
+            console.log("Selected value is Yes. Printing something...");
+            document.getElementById("current_status").style.display="block"
+            document.getElementById("current_pro").style.display="block"
+            document.getElementById("current_institution").style.display="block"
+            document.getElementById("current_completed").style.display="block"
+            document.getElementById("current_completed").value="0"
+            document.getElementById("current_satisfaction").style.display="block"
+            // You can perform any action you want here when "Yes" is selected.
+        }
+        else {
+        document.getElementById("current_status").style.display="none"
+        document.getElementById("current_pro").style.display="none"
+        document.getElementById("current_institution").style.display="none"
+        document.getElementById("current_completed").style.display="none"
+        document.getElementById("current_satisfaction").style.display="none"
+        }
+    }
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Check if the modal should be shown
+    if (!localStorage.getItem('modalShown')) {
+      $('#longContentModal').modal('show');
+      localStorage.setItem('modalShown', 'true');
+    }
+  </script>
+
+
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("myModal");
+    const closeBtn = modal.querySelector(".close");
+    const pillBtn = modal.querySelector(".pill-btn");
+
+    modal.style.display = "block";
+
+    closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    pillBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+</script> -->
+{% endblock %}
